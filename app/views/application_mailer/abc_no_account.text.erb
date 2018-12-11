@@ -1,0 +1,9 @@
+An ABC User just tried to login but their Portal Account could not be setup.
+
+User's Email: <%= @user.email %>
+User's First Name: <%= @user.first_name %>
+User's Last Name: <%= @user.last_name %>
+
+
+Data from ABC's Okta:
+<%= @user.provider_metadata.to_s %>

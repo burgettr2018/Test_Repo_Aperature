@@ -1,0 +1,31 @@
+<% digital_data(global: {pageSection: 'sso'}) %>
+<div id="main_content" data-section="" data-page="">
+  <div class="container">
+    <div class="white-wrap">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-header">
+            <h1>
+              Scheduled Maintenance
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p>
+            We apologize for any inconvenience but this part of the system will be unavailable from
+            <%= @start_date.in_time_zone('Eastern Time (US & Canada)').strftime('%a, %d %b %Y %r %Z') %>
+            to <%= @end_date.in_time_zone('Eastern Time (US & Canada)').strftime('%a, %d %b %Y %r %Z') %>.
+          </p>
+          <p>
+            For immediate assistance, please contact 1-866-ProDesk (776-3375)
+          </p>
+          <p>
+            <a href='javascript:history.back(1);'>Go back</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

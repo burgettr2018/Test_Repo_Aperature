@@ -1,0 +1,247 @@
+ru: 
+  activerecord: 
+    errors: 
+      models: 
+        user: 
+          attributes: 
+            email: 
+              invalid: "недействительна."
+  footer: 
+    legal_html: "&copy; 1996-%{year} Owens Corning Цвет PINK является зарегистрированным товарным знаком.<br>THE PINK PANTHER &trade; а также &copy; 1964-%{year} Metro-Goldwyn-Mayer Studios Inc. Все права защищены."
+  user_mailer: 
+    app_name: 
+      customer_portal: "портал клиента Owens Corning"
+    invitation: 
+      subject: "%{app_name} Приглашение%{from_name}"
+      h1: "Поздравления! Вы были приглашены на учетную запись %{app_name}."
+      invited_by: "%{name} пригласил вас на учетную запись %{app_name}."
+      html_click_prompt: "Чтобы принять это приглашение, нажмите кнопку ниже, чтобы создать свою учетную запись."
+      text_click_prompt: "Чтобы принять это приглашение, перейдите по ссылке ниже, чтобы создать свою учетную запись."
+      expiry_prompt: "Ваше приглашение автоматически истекает %{period}."
+      create_account: "Регистрация"
+      customer_portal: 
+        salutation: "Здравствуйте %{name},"
+        html_accept_instructions: "Поздравления! Ваша учетная запись настроена для %{app_name}! Чтобы получить доступ к порталу, нажмите кнопку однократной регистрации ниже, чтобы создать пароль и получить доступ к своей учетной записи. Эта кнопка позволит вам установить пароль и будет работать только один раз."
+        text_accept_instructions: "Поздравления! Ваша учетная запись настроена для %{app_name}! Чтобы получить доступ к порталу, посещение ссылка однократной регистрации ниже, чтобы создать пароль и получить доступ к своей учетной записи. Эта ссылка позволит вам установить пароль и будет работать только один раз."
+        access_portal: "Доступ к порталу"
+        portal_link_prompt: "После того, как вы настроили свой пароль, пожалуйста, используйте следующую ссылку, когда вы хотите войти в портал."
+        thank_you_instructions: "Благодарим вас за подписку на портал клиентов! Если у вас возникли трудности с доступом к вашей учетной записи, обратитесь в <a href=\"mailto:%{assignee_email}\">%{assignee_email}</a>."
+        sign_off: "Команда %{app_name}"
+    invitation_reminder: 
+      subject: "%{app_name} Приглашение%{from_name} Скоро"
+      h1: "Напоминание! Ваше приглашение%{from_name} все еще ждет."
+      invited_by: "Ваше приглашение%{from_name} присоединиться %{app_name} истекает в %{period}."
+      html_click_prompt: "Чтобы принять это приглашение, нажмите кнопку ниже, чтобы создать свою учетную запись."
+      text_click_prompt: "Чтобы принять это приглашение, перейдите по ссылке ниже, чтобы создать свою учетную запись."
+      expiry_prompt: ""
+      create_account: "Регистрация"
+    invitation_expired_invitee: 
+      subject: "%{app_name} Приглашение%{from_name} Истекает"
+      h1: "Ваше приглашение истекло."
+      invited_by: "Ваше приглашение%{from_name} присоединиться %{app_name} истек."
+      html_click_prompt: "Если вы хотите запросить новое приглашение%{from_name}, нажмите кнопку ниже. Мы отправим электронное письмо по адресу %{from_email} с просьбой о новом приглашении."
+      text_click_prompt: "Если вы хотите запросить новое приглашение%{from_name}, перейдите по ссылке ниже. Мы отправим электронное письмо по адресу %{from_email} с просьбой о новом приглашении."
+      expiry_prompt: ""
+      create_account: "Запросить новый приглашение"
+    invitation_expired_inviter: 
+      subject: "Приглашение для %{to_name} Истекает"
+      h1: "Приглашение для %{to_name} истек."
+      invited_by: "Ваше приглашение %{to_name} присоединиться %{app_name} истек."
+      html_click_prompt: "Если вы хотите отправить новое приглашение %{to_name}, нажмите кнопку ниже. Мы отправим ссылку для создания учетной записи %{to_email}."
+      text_click_prompt: "Если вы хотите отправить новое приглашение %{to_name}, перейдите по ссылке ниже. Мы отправим ссылку для создания учетной записи %{to_email}."
+      expiry_prompt: ""
+      create_account: "Отправить приглашение"
+    invitation_rerequested_inviter: 
+      subject: "%{app_name} %{to_name} Has Requested a new Invitation"
+      h1: "Please Re-Invite %{to_name}"
+      invited_by: "Your invitation to %{to_name} to join %{app_name} expired, and they would like you to give them another chance."
+      html_click_prompt: "If you would like to send a new invitation to %{to_name}, visit %{app_name} by clicking on the link below."
+      text_click_prompt: "If you would like to send a new invitation to %{to_name}, visit %{app_name} by clicking on the link below."
+      expiry_prompt: ""
+      create_account: "%{app_name}"
+    request_assigned_requester: 
+      subject: "Запрос учетной записи %{app_name}"
+      salutation: "Здравствуйте %{name},"
+      thank_you_instructions: "Благодарим вас за отправку Вашего запроса на учетную запись на %{app_name}! В настоящее время мы обрабатываем ваш запрос. В течение 2 рабочих дней Вы получите от нас электронное письмо с инструкциями по входу в %{app_name}. В этом электронном письме будет указана тема «Приглашение на %{app_name}». Письмо будет отправлено с «no-reply@owenscorning.com»."
+      contact_instructions: "Если вы хотите обсудить свой запрос с кем-либо, пожалуйста, свяжитесь с <a href=\"mailto:%{assignee_email}\">%{assignee_email}</a>."
+      sign_off: "Команда %{app_name}"
+    request_assigned_assignee: 
+      subject: "Новый запрос на регистрацию для %{app_name}"
+      html_completion_prompt: "Вам был назначен новый запрос на регистрацию портала. Пожалуйста, примите меры по этому запросу, нажав кнопку ниже и завершив процесс регистрации. Если запрос был присвоен по ошибке, вы можете повторно назначить его с помощью этой же кнопки ниже."
+      text_completion_prompt: "Вам был назначен новый запрос на регистрацию портала. Пожалуйста, примите меры по этому запросу, посетив ссылку ниже и завершив процесс регистрации. Если запрос был присвоен по ошибке, вы можете повторно назначить его с помощью этой же ссылка ниже."
+      complete_request: "Полный запрос"
+      sign_off: "Команда %{app_name}"
+    shared: 
+      closing: "Спасибо,"
+    footer: 
+      sent_by: "Это письмо было выслано по адресу: Owens Corning 1 Owens Corning Pkwy Toledo, OH, 43659, США."
+      privacy: "Мы уважаем Ваше право на конфиденциальность. <a href=\"http://www.owenscorning.com/privacy-policy\" style=\"color: black\">Перейдите по ссылке, чтобы ознакомиться с нашей политикой</a>."
+      disclaimer: "Информация, содержащаяся в этом сообщении и его вложении (ях), предназначена только для использования физическим лицом, к которому оно адресовано, и может содержать информацию, которая является привилегированной, конфиденциальной или освобождается от раскрытия. Если читатель этого сообщения не является предполагаемым получателем, Вы настоящим уведомляетесь о том, что любое распространение, рассылка или копирование этого сообщения строго запрещено. Если вы получили это сообщение по ошибке, сообщите об этом по адресу <a href=\"mailto:postmaster@owenscorning.com\">postmaster@owenscorning.com</a> и удалите сообщение без сохранения каких-либо копий. Спасибо."
+      copyright: "PINK PANTHER ™ & © 1964-%{year} Metro-Goldwyn-Mayer Studios Inc. Все права защищены. Розовый цвет является зарегистрированным товарным знаком Owens Corning. © %{year} Owens Corning. Все права защищены."
+  impersonate: 
+    impersonate_user: "Олицетворять пользователя"
+    member_id: "ID пользователя"
+    member_id_hint: "Введите идентификатор участника, и список пользователей будет заполнен ниже."
+    user: "Пользователь для олицетворения"
+    impersonate: "олицетворять"
+  devise: 
+    failure: 
+      invitation_expired: "Ваше приглашение истекло."
+      invitation_not_found: "Приглашение не найдено или больше не действует. Войдите в систему ниже."
+      inactive_user: "Ваш доступ был отклонен."
+      request_new_invitation: "Запросить новое приглашение."
+      already_authenticated: "Повторный вход"
+      inactive: "Ваша учетная запись не активирована."
+      invalid: "Неверные %{authentication_keys} или пароль"
+      locked: "Ваша учетная запись заблокирована"
+      last_attempt: "Последняя попытка перед блокировкой учетной записи."
+      not_found_in_database: "Неверные %{authentication_keys} или пароль"
+      timeout: "Время работы истекло. Повторите вход."
+      unauthenticated: "Необходима регистрация"
+      unconfirmed: "Необходимо подтвердить адрес электронной почты"
+    registrations: 
+      new: 
+        sign_up: "Регистрация"
+        characters_minimum: "Минимальное количество символов"
+      user: 
+        invitation_resubmitted: "Был отправлен ваш запрос на повторное приглашение."
+        invitation_resubmit_original_user: "Ссылка для повторного приглашения пользователя действительна только для пользователя, который изначально пригласил пользователя."
+      resubmit: 
+        h1: "Повторно пригласить пользователя"
+        invitation_resubmit_confirmation: "Новый запрос на приглашение для %{to_name} успешно отправлено."
+      destroyed: "До встречи! Ваша учетная запись удалена."
+      signed_up: "Добро пожаловать! Регистрация прошла успешно."
+      signed_up_but_inactive: "Регистрация прошла успешно. Однако, вход невозможен, т.к. учетная запись не активирована."
+      signed_up_but_locked: "Регистрация прошла успешно. Однако, вход невозможен, т.к. учетная запись заблокирована."
+      signed_up_but_unconfirmed: "Ссылка для подтверждения регистрации выслана на Вашу электронную почту. Прейдите по ссылке, чтобы активировать учетную запись."
+      update_needs_confirmation: "Ваша учетная запись обновлена. Адрес электронной почты проходит проверку. Перейдите по ссылке, чтобы подтвердить новый адрес электронной почты."
+      updated: "Ваша учетная запись обновлена."
+      set_new_password: "Введите новый пароль"
+    sessions: 
+      invalid_saml_sp: "Сессия не может быть установлена, поскольку домен настроен неправильно. Пожалуйста, повторите попытку позже."
+      signed_in: "Вход осуществлен."
+      signed_out: "Выход осуществлен."
+      already_signed_out: "Выход осуществлен."
+      not_found_in_database: "Неверный логин или пароль."
+      new: 
+        login: "Логин"
+        logging_in: "Вход…"
+        username_or_email: "Имя пользователя или Email"
+        remember_me: "Запомнить"
+        need_to_register: "Необходима регистрация?"
+    confirmations: 
+      new: 
+        resend_confirmation_instructions: "Выслать инструкции по подтверждению"
+        resend_instructions: "Выслать инструкции"
+      show: 
+        confirmation_almost_done: "Почти закончили!"
+        create_password_instructions: "Создайте пароль, чтобы получить доступ к учетной записи"
+        create_password: "Создайте пароль"
+      confirmed: "Ваш адрес электронной почты подтвержден"
+      send_instructions: "Через несколько минут Вы получите письмо с инструкциями для подтверждения адреса электронной почты."
+      send_paranoid_instructions: "Если Ваш адрес электронной почты существует в нашей базе, через несколько минут Вы получите инструкции, как подтвердить этот адрес."
+    passwords: 
+      edit: 
+        change_your_password: "Смените пароль"
+        new_password: "Новый пароль"
+        confirm_new_password: "Подтвердите новый пароль"
+        change_my_password: "Сменить мой пароль"
+        new_password_hint: "должен содержать как минимум 1 букву, 1 номер и 1 специальный символ ($, @, !, %, *, #, ., ?, &)"
+      new: 
+        forgot_password_upper: "Забыли пароль?"
+        send_reset_instructions: "Повторная пересылка инструкций"
+      no_token: "Вы не можете получить доступ к этой странице без осуществления перехода по ссылке, высланной на электронную почту. Если Вы перешли по ссылке, убедитесь, что ссылка скопирована полностью."
+      send_instructions: "Вы получите инструкции по смене пароля через несколько минут."
+      send_paranoid_instructions: "Если Ваш адрес электронной почти существует в нашей базе, Вы получите ссылку для восстановлению пароля."
+      updated: "Смена пароля прошла успешно. Регистрация осуществлена."
+      updated_not_active: "Смена пароля прошла успешно."
+    user_profile: 
+      edit: 
+        edit_user: "Внести изменения в карточку пользователя"
+        values_managed_through_provider: "Следующие значения управляются через ваш %{provider} полномочия."
+        return: "Назад"
+        must_be_unique: "должен быть уникальным"
+        waiting_confirmation: "Ожидается подтверждение"
+        can_leave_blank_html: "Оставьте поле пустым, если вы не хотите вносить изменения"
+        need_current_password: "Необходимо ввести пароль для валидации изменений"
+        update: "Изменения"
+    unlocks: 
+      send_instructions: "Через несколько минут на Вашу электронную почту будут высланы инструкции по разблокировке учетной записи."
+      send_paranoid_instructions: "Если Ваша учетная запись существует, Вы получите инструкции по разблокировке на электронную почту."
+      unlocked: "Ваша учетная запись разблокирована."
+      new: 
+        resend_unlock_instructions: "Выслать инструкции по разблокировке"
+    mailers: 
+      confirmation_instructions: 
+        confirm_account_instructions: "Вы можете подтвердить email перейдя по ссылке ниже"
+        confirm_my_account: "Подтвердить мою учетную запись"
+      password_change: 
+        password_change_notification: "Пароль изменен"
+      reset_password_instructions: 
+        requested_password_change: "Была запрошена ссылка для смены пароля. Сменить пароль можно перейдя по ссылке ниже."
+        requested_password_change_with_provider: "Была запрошена ссылка для смены пароля. Права предоставлены %{provider}."
+        check_with_support_provider: "Пожалуйста, обратитесь в службу поддержки %{provider} для получения доступа к системе."
+        change_my_password: "Сменить пароль"
+        if_not_requesting: "Если Вы не делали запрос, игнорируйте это письмо."
+        create_new_password_instructions: "Смена пароля невозможна до тех пор, пока Вы не перейдете по ссылке выше и не создадите новый пароль."
+      unlock_instructions: 
+        account_locked: "Учетная запись заблокирована"
+        html_unlock_instructions: "Перейдите по ссылке ниже, чтобы разблокировать учетную запись"
+        text_unlock_instructions: "Перейдите по ссылке ниже, чтобы разблокировать учетную запись"
+        unlock_my_account: "Разблокировать мою учетную запись"
+    mailer: 
+      confirmation_instructions: 
+        subject: "Инструкции по подтверждению адреса электронной почты"
+      reset_password_instructions: 
+        subject: "Инструкции по смене пароля"
+      unlock_instructions: 
+        subject: "Инструкции по разблокировке"
+    omniauth_callbacks: 
+      failure: "Не удалось аутентифицировать вас из %{kind}, потому что \"%{reason}\"."
+      success: "Успешно завершена %{kind} Счет."
+    shared: 
+      owens_corning_login: "Логин Owens Corning"
+      customer_portal: "Клиентский портал"
+      welcome: "Добро пожаловать"
+      hello: "Рады Вас приветствовать"
+      close: "Закрыть"
+      log_in: "Войти"
+      forgot_password_lower: "Забыли пароль?"
+      did_not_receive_confirmation_instructions: "Не получили инструкции?"
+      did_not_receive_unlock_instructions: "Не получили инструкции?"
+      sign_in_with: "осуществить вход с %{provider}"
+      profile: "Профиль"
+      logout: "Выйти"
+      signing_out: "Выход…"
+      welcome_to: "Добро пожаловать"
+      email: "Email"
+      password: "Пароль"
+      password_confirmation: "Подтверждение пароля"
+      current_password: "Действующий пароль"
+      first_name: "Имя"
+      last_name: "Фамилия"
+      click_to_log_in: "Перейдите по ссылке для входа"
+      login_to: "Вход"
+  rails_admin: 
+    admin: "Админ"
+  errors: 
+    not_authorized: "Нет доступа"
+    messages: 
+      blank: "%{attribute} необходим"
+      invalid: " Не действителен. Запросите новый."
+      already_confirmed: "был подтвержден. Осуществите вход."
+      confirmation_period_expired: "должно быть подтверждено в рамках %{period}, запросите новый"
+      expired: "Время вышло. Запросите новый."
+      not_found: "Не найден"
+      not_locked: "Не было заблокировано"
+      not_saved: 
+        one: "1 ошибка запретила это %{resource} от сохранения:"
+        other: "%{count} ошибки запретили это %{resource} от сохранения:"
+  simple_form: 
+    'true': "Да"
+    'false': "Нет"
+    required: 
+      text: "необходимо"
+      mark: "*"
+    error_notification: 
+      default_message: "Возникли следующие проблемы"

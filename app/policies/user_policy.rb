@@ -1,0 +1,3 @@
+class UserPolicy < ApiPolicy
+
+end

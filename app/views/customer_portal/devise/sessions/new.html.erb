@@ -1,0 +1,27 @@
+<% digital_data(global: {pageSection: 'login'}) %>
+<div class="cp-sign-in__container" data-section="" data-page="">
+  <% content_for :page_js do %>
+    <script>
+      var rubyMailBoxUsers = "<%= @mailBoxUsers %>";
+    </script>
+  <% end %>
+  <div class="cp-sign-in__login-box">
+
+    <div class="page-header cp-sign-in__login-header">
+      <%= image_tag "ui/bg/oc-logo.png", class: "cp-sign-in__login-header-logo" %>
+      <h1 class="cp-sign-in__login-header-heading"><%= t('devise.shared.customer_portal') %></h1>
+    </div>
+
+    <%= render "customer_portal/devise/sessions/shared/login_errors" %>
+    <%= render "devise/shared/login_form" %>
+
+    <div class="cp-sign-in__links" data-okta-no-show>
+      <% registration_url = feature?(:cp_registration) ? "#{OauthApplication.find_by_name('OC_COM').try(:application_uri)}/customerportal/registration/new" : "https://portalsso.owenscorning.com/occommonregistration/registration.aspx?portalname=Customer" %>
+      <%= link_to(t('devise.sessions.new.need_to_register'), registration_url) %><br>
+      <%= render "devise/shared/links" %>
+    </div>
+
+    <%= render "customer_portal/devise/sessions/shared/legal_notice" %>
+	</div>
+  <div class="cp-sign-in__peekaboo-panther"></div>
+</div>

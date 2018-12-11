@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="no-js ie lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js ie lt-ie9"><![endif]-->
+<!--[if IE 9]><html class="no-js ie ie9"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js gt-ie9 cp-sign-in__background"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title><%= t('devise.shared.owens_corning_login') %></title>
+  <%= yield(:analytics_data_layer) %>
+  <%= render :partial => 'adobe_dtm_head_portals' %>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <%= javascript_include_tag "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js", "https://oss.maxcdn.com/respond/1.4.2/respond.min.js" %>
+  <![endif]-->
+
+  <%= yield(:page_js) %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= render partial: 'customer_portal/partials/hotjar' %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="cp-sign-in__body">
+	<%= yield %>
+  <%= render :partial => 'adobe_dtm_bottom_portals' %>
+</body>
+</html>

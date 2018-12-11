@@ -1,0 +1,59 @@
+(function() {
+	//console.log('loaded patch');
+	function jQueryCheck() {
+		if (window.jQuery) {
+			$(function() {
+				// do whatever (jquery 1.5)
+
+				function createCORSRequest(method, url){
+					var xhr = new XMLHttpRequest();
+					if ("withCredentials" in xhr){
+						xhr.open(method, url, true);
+						xhr.withCredentials = true;
+					} else if (typeof XDomainRequest != "undefined"){
+						xhr = new XDomainRequest();
+						xhr.open(method, url);
+					} else {
+						xhr = null;
+					}
+					return xhr;
+				}
+
+				var authToken = '<%= form_authenticity_token %>';
+				var $textBox = $('input[name$=UsernameTextBox]');
+				function makeUmsCheck() {
+					//console.log('hitting ums');
+
+					var xhr = createCORSRequest('POST', '<%= @check_path %>');
+					if (xhr) {
+						xhr.setRequestHeader('X-CSRF-Token', authToken);
+						xhr.send(JSON.stringify({
+							username: $textBox.val()
+						}));
+						xhr.onreadystatechange = function () {
+							var DONE = 4;
+							if (xhr.readyState === DONE) {
+								var response = JSON.parse(xhr.responseText);
+								//console.log(response);
+								if (response.redirect) {
+									$('.login-table').css('opacity', '0.5');
+									window.location = response.url;
+								}
+							}
+						};
+					}
+				}
+
+				if ($textBox.val()) {
+					makeUmsCheck();
+				}
+				$textBox.blur(makeUmsCheck);
+			});
+		}
+		else { //wait for jquery to load
+			window.setTimeout(jQueryCheck, 100);
+		}
+	}
+
+	jQueryCheck();
+})();

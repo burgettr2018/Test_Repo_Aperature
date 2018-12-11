@@ -1,0 +1,19 @@
+{
+	"name": "ums",
+	"version": "1.0.0",
+	"description": "User Management Services",
+	"main": "index.js",
+	"dependencies": {
+		"mjml": "^4"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/owenscorning/ums.git"
+	},
+	"author": "Owens Corning",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/owenscorning/ums/issues"
+	},
+	"homepage": "https://github.com/owenscorning/ums"
+}

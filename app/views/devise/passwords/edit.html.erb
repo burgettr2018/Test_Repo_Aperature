@@ -1,0 +1,45 @@
+<% digital_data(global: {pageSection: 'forgot password'}) %>
+<div id="main_content" data-section="" data-page="">
+	<div class="container">
+		<div class="white-wrap">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="page-header">
+						<h1><%= t('devise.passwords.edit.change_your_password') %></h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
+					  <%= f.error_notification %>
+
+            <% if current_user.blank? %>
+              <%= f.input :reset_password_token, as: :hidden %>
+              <span class="has-error"><%= f.full_error :reset_password_token %></span>
+            <% end %>
+
+					  <div class="form-inputs">
+            <% if current_user.present? %>
+              <%= f.input :current_password, hint: t('devise.user_profile.edit.need_current_password'), required: true, label: t('devise.shared.current_password'), autofocus: true %>
+            <% end %>
+						<%= f.input :password, hint: t('devise.passwords.edit.new_password_hint'), label: t('devise.passwords.edit.new_password'), required: true %>
+						<%= f.input :password_confirmation, label: t('devise.passwords.edit.confirm_new_password'), required: true %>
+					  </div>
+
+					  <div class="form-actions">
+						  <%= f.button :button, class: 'btn btn-primary' do %>
+                <%= t('devise.passwords.edit.change_my_password') %>
+						  <% end %>
+					  </div>
+					<% end %>
+				</div>
+			</div>
+			<div class="row mtl">
+				<div class="col-sm-12">
+					<%= render "devise/shared/links" %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

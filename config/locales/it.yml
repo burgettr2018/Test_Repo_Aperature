@@ -1,0 +1,247 @@
+it: 
+  activerecord: 
+    errors: 
+      models: 
+        user: 
+          attributes: 
+            email: 
+              invalid: "non é valido."
+  footer: 
+    legal_html: "&copy; 1996-%{year} Il colore ROSA di Owens Corning PINK é un marchio registrato di Owens Corning.<br>Il marchio PINK PANTHER &trade; e &copy; 1964-%{year} Metro-Goldwyn-Mayer Studios Inc. Tutti I diritti riservati."
+  user_mailer: 
+    app_name: 
+      customer_portal: "Portale clienti Owens Corning"
+    invitation: 
+      subject: "%{app_name} Invito%{from_name}"
+      h1: "Complimenti! Sei stato invitato a un account su %{app_name}."
+      invited_by: "%{name} ti ha invitato a un account su %{app_name}."
+      html_click_prompt: "Per accettare questo invito, fai clic sul pulsante in basso per creare il tuo account."
+      text_click_prompt: "Per accettare questo invito, visita il link sottostante per creare il tuo account."
+      expiry_prompt: "Il tuo invito scadrà automaticamente in %{period}."
+      create_account: "Creare un profilo"
+      customer_portal: 
+        salutation: "Ciao %{name},"
+        html_accept_instructions: "Complimenti! Il tuo account è stato configurato per il %{app_name}! Per accedere al portale, fare clic sul pulsante di registrazione una tantum sottostante per creare una password e accedere al proprio account. Questo pulsante ti consentirà di impostare la tua password e funzionerà una sola volta."
+        text_accept_instructions: "Complimenti! Il tuo account è stato configurato per il %{app_name}! Per accedere al portale, fare visita sul collegamento di registrazione una tantum sottostante per creare una password e accedere al proprio account. Questo collegamento ti consentirà di impostare la tua password e funzionerà una sola volta."
+        access_portal: "Accesso al Portale"
+        portal_link_prompt: "Dopo aver impostato la password, utilizzare il seguente link ogni volta che si desidera accedere nuovamente al portale."
+        thank_you_instructions: "Grazie per esserti iscritto al portale clienti! Se hai difficoltà ad accedere al tuo account, contatta <a href=\"mailto:%{assignee_email}\">%{assignee_email}</a>."
+        sign_off: "%{app_name} Team"
+    invitation_reminder: 
+      subject: "%{app_name} L'invito%{from_name} scade presto"
+      h1: "Promemoria! Il tuo invito%{from_name} è ancora in attesa."
+      invited_by: "Il tuo invito%{from_name} per entrare in %{app_name} scadrà tra %{period}."
+      html_click_prompt: "Per accettare questo invito, fai clic sul pulsante in basso per creare il tuo account."
+      text_click_prompt: "Per accettare questo invito, visita il link sottostante per creare il tuo account."
+      expiry_prompt: ""
+      create_account: "Creare un profilo"
+    invitation_expired_invitee: 
+      subject: "%{app_name} Invito%{from_name} scaduto"
+      h1: "Il tuo invito è scaduto."
+      invited_by: "Il tuo invito%{from_name} per entrare in %{app_name} è scaduto."
+      html_click_prompt: "Se desideri richiedere un nuovo invito%{from_name}, fai clic sul pulsante in basso. Invieremo un'email a %{from_email} con la tua richiesta di un nuovo invito."
+      text_click_prompt: "Se desideri richiedere un nuovo invito%{from_name}, visita il link sottostante. Invieremo un'email a %{from_email} con la tua richiesta di un nuovo invito."
+      expiry_prompt: ""
+      create_account: "Richiedi un nuovo invito"
+    invitation_expired_inviter: 
+      subject: "Invito per %{to_name} scaduto"
+      h1: "L'invito per %{to_name} è scaduto."
+      invited_by: "Il tuo invito a %{to_name} per entrare in %{app_name} è scaduto."
+      html_click_prompt: "Se desideri inviare un nuovo invito a %{to_name}, fai clic sul pulsante in basso. Invieremo un link per creare un account su %{to_email}."
+      text_click_prompt: "Se desideri inviare un nuovo invito a %{to_name}, visita il link sottostante. Invieremo un link per creare un account su %{to_email}."
+      expiry_prompt: ""
+      create_account: "Invia di nuovo Invito"
+    invitation_rerequested_inviter: 
+      subject: "%{app_name} %{to_name} Has Requested a new Invitation"
+      h1: "Please Re-Invite %{to_name}"
+      invited_by: "Your invitation to %{to_name} to join %{app_name} expired, and they would like you to give them another chance."
+      html_click_prompt: "If you would like to send a new invitation to %{to_name}, visit %{app_name} by clicking on the link below."
+      text_click_prompt: "If you would like to send a new invitation to %{to_name}, visit %{app_name} by clicking on the link below."
+      expiry_prompt: ""
+      create_account: "%{app_name}"
+    request_assigned_requester: 
+      subject: "Richiesta account del %{app_name}"
+      salutation: "Ciao %{name},"
+      thank_you_instructions: "Grazie per aver inviato la richiesta per un account sul %{app_name}! Stiamo attualmente esaminando la tua richiesta e dovresti ricevere una nostra email entro 2 giorni lavorativi contenenti le istruzioni per l'accesso al %{app_name}. Questa e-mail avrà l'oggetto \"Invito al %{app_name}\" e verrà inviata da \"no-reply@owenscorning.com\"."
+      contact_instructions: "Se desideri parlare con qualcuno della tua richiesta, contatta <a href=\"mailto:%{assignee_email}\">%{assignee_email}</a>."
+      sign_off: "%{app_name} Team"
+    request_assigned_assignee: 
+      subject: "Nuova richiesta di registrazione per il %{app_name}"
+      html_completion_prompt: "Ti è stata assegnata una nuova richiesta di registrazione al Portale del cliente. Si prega di procedere con questa richiesta facendo clic sul pulsante in basso e completando la procedura di registrazione. Se la richiesta è stata assegnata per errore, è possibile riassegnarla tramite lo stesso pulsante in basso."
+      text_completion_prompt: "Ti è stata assegnata una nuova richiesta di registrazione al Portale del cliente. Si prega di procedere con questa richiesta facendo visita il link in basso e completando la procedura di registrazione. Se la richiesta è stata assegnata per errore, è possibile riassegnarla tramite lo stesso link in basso."
+      complete_request: "Richiesta completata"
+      sign_off: "%{app_name} Team"
+    shared: 
+      closing: "Grazie,"
+    footer: 
+      sent_by: "Questa mail é stata inviata da : Owens Corning 1 Owens Corning Pkwy Toledo , OH, 43659, US."
+      privacy: "Rispettiamo il suo diritto di privacy. <a href=\"http://www.owenscorning.com/privacy-policy\" style=\"color: black\">Premere qui per visionare l'informativa</a>."
+      disclaimer: "L’informazione contenuta in questa comunicazione e nell’allegato ( i ) é da considerarsi solamente per uso individuale da parte del destinatario e puo’ contenere informazioni riservate, confidenziali ,o non divulgabili. Se il lettore di questo messaggio non dovesse essere il destinatario le notifichiamo che ogni diffusione, distribuzione ,o copia di questa comunicazione é severamente proibita . Se dovesse aver ricevuto questa comunicazione per errore, voglia cortesemente avvisare  <a href=\"mailto:postmaster@owenscorning.com\">postmaster@owenscorning.com</a> senza trattenerne alcuna copia. La ringraziamo."
+      copyright: "THE PINK PANTHER™ & © 1964–%{year} Metro-Goldwyn-Mayer Studios Inc. Tutti i diritti riservati . il colore ROSA é un marchio registrato di Owens Corning. © %{year} Owens Corning . Tutti i diritti riservati ."
+  impersonate: 
+    impersonate_user: "Impersonare l'utente"
+    member_id: "ID membro"
+    member_id_hint: "Inserisci l'ID membro e l'elenco degli utenti verrà compilato di seguito"
+    user: "Utente da impersonare"
+    impersonate: "Impersonare"
+  devise: 
+    failure: 
+      invitation_expired: "Il tuo invito è scaduto."
+      invitation_not_found: "Invito non trovato o non più attivo. Effettua il login qui sotto."
+      inactive_user: "Il tuo accesso è stato negato."
+      request_new_invitation: "Richiedi un nuovo invito."
+      already_authenticated: "Già stato autenticato."
+      inactive: "Il suo account non é stato ancora attivato."
+      invalid: "Non valido %{authentication_keys} o password."
+      locked: "Il suo account é bloccato."
+      last_attempt: "Ha ancora un solo tentativo prima che il suo account venga bloccato."
+      not_found_in_database: "Invalido %{authentication_keys} o password."
+      timeout: "La sua sessione é terminata. Voglia connettersi nuovamente per continuare."
+      unauthenticated: "Deve connettersi o iscriversi prima di procedere."
+      unconfirmed: "Deve confermare il suo indirizzo mail prima di continuare."
+    registrations: 
+      new: 
+        sign_up: "Avere accesso"
+        characters_minimum: "numero minimo di caratteri"
+      user: 
+        invitation_resubmitted: "La tua richiesta di essere nuovamente invitati è stata inviata."
+        invitation_resubmit_original_user: "Il link per invitare nuovamente un utente è valido solo per l'utente che ha originariamente invitato l'utente."
+      resubmit: 
+        h1: "Riattiva l'utente"
+        invitation_resubmit_confirmation: "Una nuova richiesta di invito per %{to_name} è stata inviata con successo."
+      destroyed: "Arrivederci! Il suo account é stato cancellato. Speriamo ci ricontatterà in futuro."
+      signed_up: "Benvenuto! È riuscito a contattarsi."
+      signed_up_but_inactive: "È riuscito a connettersi. Comunque, non possiamo darle l'accesso perché il suo account non é stato ancora attivato."
+      signed_up_but_locked: "È riuscito a connettersi, ma non può accedere perché il suo account é stato bloccato."
+      signed_up_but_unconfirmed: "Un messaggio con link di conferma é stato inviato al suo indirizzo mail. La invitiamo a seguire il link per attivare il suo account."
+      update_needs_confirmation: "Il suo account é stato aggiornato, ma dobbiamo verificare il suo indirizzo mail. Voglia controllare l'email e seguire il link di conferma per confermare il suo nuovo indirizzo mail."
+      updated: "Il suo account é stato aggiornato."
+      set_new_password: "Crei una nuova password."
+    sessions: 
+      invalid_saml_sp: "La sessione non può essere stabilita perché il dominio è configurato in modo errato. Per favore riprova più tardi."
+      signed_in: "È stato autenticato."
+      signed_out: "È stato sconnesso."
+      already_signed_out: "È già stato sconnesso."
+      not_found_in_database: "Login o password invalidi."
+      new: 
+        login: "Accesso"
+        logging_in: "Accedere..."
+        username_or_email: "Nome utilizzatore o indirizzo Email"
+        remember_me: "Ricordati di me"
+        need_to_register: "Ti vuoi registrare?"
+    confirmations: 
+      new: 
+        resend_confirmation_instructions: "Reinvia istruzioni di conferma"
+        resend_instructions: "Reinvia Instruzioni"
+      show: 
+        confirmation_almost_done: "Ci sei quasi riuscito!"
+        create_password_instructions: "Ora crea una password per poter accedere in sicurezza al tuo account."
+        create_password: "Crea una Password"
+      confirmed: "Il suo indirizzo mail é stato confermato."
+      send_instructions: "Riceverà una mail con istruzioni su come confermare il suo indirizzo mail fra qualche minuto."
+      send_paranoid_instructions: "Se il suo indirizzo mail esiste già in ns. data base riceverà una mail con istruzioni su come confermare il suo indirizzo mail fra qualche minuto."
+    passwords: 
+      edit: 
+        change_your_password: "Cambia la tua Password"
+        new_password: "Nuova password"
+        confirm_new_password: "Conferma la tua nuova password"
+        change_my_password: "Cambia la mia Password"
+        new_password_hint: "deve contenere almeno 1 lettera, 1 numero e 1 carattere speciale ($, @, !, %, *, #, ., ?, &)"
+      new: 
+        forgot_password_upper: "Hai dimenticato la tua Password?"
+        send_reset_instructions: "Reinvia Istruzioni per Reset"
+      no_token: "Non può accedere a questa pagina senza passare da un reset email. Se ha effettuato una password reset email, si assicuri di aver ben utilizzato l'URL' fornito."
+      send_instructions: "Riceverà una mail con istruzioni su come resettare la sua password fra qualche minuto."
+      send_paranoid_instructions: "Se il suo indirizzo mail é già esitente nel ns. data base, riceverà il link per recupero password al suo indirizzo mail fra qualche."
+      updated: "La sua password é stata cambiata. Ora puo accedere."
+      updated_not_active: "La sua password é stata cambiata."
+    user_profile: 
+      edit: 
+        edit_user: "Modifica l'utilizzatore"
+        values_managed_through_provider: "I seguenti dati sono gestiti tramite le credenziali del tuo fornitore %{provider}."
+        return: "Ritorno"
+        must_be_unique: "deve essere unico"
+        waiting_confirmation: "Attualmente in attesa di conferma per:"
+        can_leave_blank_html: "lascia in bianco se non vuoi cambiarlo"
+        need_current_password: "abbiamo bisogno della tua password attuale per confermare i tuoi cambi"
+        update: "Aggiornamento"
+    unlocks: 
+      send_instructions: "Riceverà una mail con istruzioni su come sbloccare il suo account fra qualche minuto."
+      send_paranoid_instructions: "Se il suo account é già esistente, receverà una email con instruzioni su come sbloccarlo fra qualche minuto."
+      unlocked: "Il suo account é stato sbloccato. La invitiamo a connettersi per continuare."
+      new: 
+        resend_unlock_instructions: "Reinvia istruzioni sblocco"
+    mailers: 
+      confirmation_instructions: 
+        confirm_account_instructions: "Può confermare il suo mail account tramite il seguente link:"
+        confirm_my_account: "Confirma il mio account"
+      password_change: 
+        password_change_notification: "La stiamo contattando per notificarle che la sua password é stata cambiata."
+      reset_password_instructions: 
+        requested_password_change: "È stato richiesto un link per cambiare la sua password. Lo potrà fare attraverso il link qui di seguito."
+        requested_password_change_with_provider: "È stato richiesto un link per cambiare la sua password. Le credenziali sono gestite attraverso %{provider}."
+        check_with_support_provider: "Voglia controllare con suo support per %{provider} aiuto per accesso al sistema."
+        change_my_password: "Cambia la mia password"
+        if_not_requesting: "Se non hai richiesto ciò, ignora per favore questa email."
+        create_new_password_instructions: "La tua password non cambierà fino a quando non accederai al link suddetto e ne avrai create una nuova."
+      unlock_instructions: 
+        account_locked: "Il tuo accoiunt é stato bloccato e per via di un'eccessivo numero di tentavivi vani di connessione."
+        html_unlock_instructions: "Seleziona il link qui di seguito per sbloccare il tuo account:"
+        text_unlock_instructions: "Visita il link qui di seguito per sbloccare il tuo account:"
+        unlock_my_account: "Sbloccare il mio account"
+    mailer: 
+      confirmation_instructions: 
+        subject: "Istruzioni di conferma"
+      reset_password_instructions: 
+        subject: "Istruzioni per Reset password"
+      unlock_instructions: 
+        subject: "Istruzioni per sblocco"
+    omniauth_callbacks: 
+      failure: "Non riusciamo identificarla da %{kind} perché \"%{reason}\"."
+      success: "É stato autenticato %{kind} account."
+    shared: 
+      owens_corning_login: "Connettersi con Owens Corning"
+      customer_portal: "Portale cliente"
+      welcome: "Benvenuto"
+      hello: "Ciao"
+      close: "Chiuso"
+      log_in: "Connettersi"
+      forgot_password_lower: "Hai dimenticato la password?"
+      did_not_receive_confirmation_instructions: "Non hai ricevuto le istruzioni di conferma?"
+      did_not_receive_unlock_instructions: "Non hai ricevuto le istructioni per lo sblocco?"
+      sign_in_with: "Connettiti con %{provider}"
+      profile: "Profilo"
+      logout: "Sconnettersi"
+      signing_out: "Sconnettersi..."
+      welcome_to: "Benvenuto a"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Conferma Password"
+      current_password: "Password attuale"
+      first_name: "Nome"
+      last_name: "Cognome"
+      click_to_log_in: "Seleziona il seguente link per connetterti"
+      login_to: "Connettersi a"
+  rails_admin: 
+    admin: "Ammin"
+  errors: 
+    not_authorized: "Non sei autorizzato ad effettuare questa operazione."
+    messages: 
+      blank: "%{attribute} is required"
+      invalid: " non é valido."
+      already_confirmed: "é già stato confermato, provi a connettersi nuovamente"
+      confirmation_period_expired: "necessita essere confermato tra %{period}, voglia richiederne un nuovo"
+      expired: "scaduta, voglia richiederne una nuova"
+      not_found: "non trovato"
+      not_locked: "non era bloccato"
+      not_saved: 
+        one: "1 errore ha impedito questo %{resource} di essere salvato:"
+        other: "%{count} alcuni errori hanno impedito questo %{resource} di essere salvato:"
+  simple_form: 
+    'true': "Si"
+    'false': "No"
+    required: 
+      text: "richiesto"
+      mark: "*"
+    error_notification: 
+      default_message: "Si prega di rivedere i problemi qui di seguito:"

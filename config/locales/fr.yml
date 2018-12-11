@@ -1,0 +1,247 @@
+fr: 
+  activerecord: 
+    errors: 
+      models: 
+        user: 
+          attributes: 
+            email: 
+              invalid: "n'est pas valide."
+  footer: 
+    legal_html: "&copy; 1996-%{year} Owens Corning La couleur PINK est une marque déposée de Owens Corning. <br>THE PINK PANTHER &trade; et &copy; 1964-%{year} Metro-Goldwyn-Mayer Studios Inc. Tous droits réservés."
+  user_mailer: 
+    app_name: 
+      customer_portal: "Portail client Owens Corning"
+    invitation: 
+      subject: "%{app_name} Invitation%{from_name}"
+      h1: "Toutes nos félicitations! Vous avez été invité à créer un compte sur %{app_name}"
+      invited_by: "%{name} vous a invité à créer un compte sur %{app_name}."
+      html_click_prompt: "Pour accepter cette invitation, cliquez sur le bouton ci-dessous pour créer votre compte."
+      text_click_prompt: "Pour accepter cette invitation, visitez le lien ci-dessous pour créer votre compte."
+      expiry_prompt: "Votre invitation expirera automatiquement dans %{period}."
+      create_account: "Créer un compte"
+      customer_portal: 
+        salutation: "Bonjour %{name},"
+        html_accept_instructions: "Toutes nos félicitations! Votre compte a été configuré pour %{app_name}! Pour accéder au portail, veuillez cliquer sur le bouton d'inscription ci-dessous pour créer un mot de passe et accéder à votre compte. Ce bouton vous permettra de configurer votre mot de passe et ne fonctionnera qu'une seule fois."
+        text_accept_instructions: "Toutes nos félicitations! Votre compte a été configuré pour %{app_name}! Pour accéder au portail, veuillez visiter sur le lien d'inscription ci-dessous pour créer un mot de passe et accéder à votre compte. Ce lien vous permettra de configurer votre mot de passe et ne fonctionnera qu'une seule fois."
+        access_portal: "Accès au portail"
+        portal_link_prompt: "Une fois que vous avez défini votre mot de passe, utilisez le lien suivant lorsque vous souhaitez vous reconnecter au portail."
+        thank_you_instructions: "Merci de vous être inscrit au portail client! Si vous rencontrez des difficultés pour accéder à votre compte, veuillez contacter <a href=\"mailto:%{assignee_email}\">%{assignee_email}</a>."
+        sign_off: "L'équipe du %{app_name}"
+    invitation_reminder: 
+      subject: "%{app_name} L'invitation%{from_name} expire bientôt"
+      h1: "Rappel! Votre invitation%{from_name} attend toujours"
+      invited_by: "Votre invitation%{from_name} à rejoindre %{app_name} expirera dans %{period}."
+      html_click_prompt: "Pour accepter cette invitation, cliquez sur le bouton ci-dessous pour créer votre compte."
+      text_click_prompt: "Pour accepter cette invitation, visitez le lien ci-dessous pour créer votre compte."
+      expiry_prompt: ""
+      create_account: "Créer un compte"
+    invitation_expired_invitee: 
+      subject: "%{app_name} L'invitation%{from_name} a expiré"
+      h1: "Votre invitation a expiré"
+      invited_by: "Votre invitation%{from_name} à rejoindre %{app_name} a expiré."
+      html_click_prompt: "Si vous souhaitez demander une nouvelle invitation%{from_name}, click the button below. We will send an email to %{from_email} with your request for a new invite."
+      text_click_prompt: "Si vous souhaitez demander une nouvelle invitation%{from_name}, visitez le lien ci-dessous. Nous enverrons un e-mail à %{from_email} avec votre demande d'une nouvelle invitation."
+      expiry_prompt: ""
+      create_account: "Demander une nouvelle invitation"
+    invitation_expired_inviter: 
+      subject: "%{app_name} L'invitation pour %{to_name} a expiré"
+      h1: "L'invitation pour %{to_name} a expiré"
+      invited_by: "Votre invitation à %{to_name} pour rejoindre %{app_name} a expiré."
+      html_click_prompt: "Si vous souhaitez envoyer une nouvelle invitation à %{to_name}, cliquez sur le bouton ci-dessous. Nous enverrons un lien pour créer un compte sur %{to_email}."
+      text_click_prompt: "Si vous souhaitez envoyer une nouvelle invitation à %{to_name}, visitez le lien ci-dessous. Nous enverrons un lien pour créer un compte sur %{to_email}."
+      expiry_prompt: ""
+      create_account: "Renvoyer l'invitation"
+    invitation_rerequested_inviter: 
+      subject: "%{app_name} %{to_name} Has Requested a new Invitation"
+      h1: "Please Re-Invite %{to_name}"
+      invited_by: "Your invitation to %{to_name} to join %{app_name} expired, and they would like you to give them another chance."
+      html_click_prompt: "If you would like to send a new invitation to %{to_name}, visit %{app_name} by clicking on the link below."
+      text_click_prompt: "If you would like to send a new invitation to %{to_name}, visit %{app_name} by clicking on the link below."
+      expiry_prompt: ""
+      create_account: "%{app_name}"
+    request_assigned_requester: 
+      subject: "Demande de compte au %{app_name}"
+      salutation: "Bonjour %{name},"
+      thank_you_instructions: "Merci d'avoir soumis votre demande de compte sur le %{app_name}! Nous sommes en train d'examiner votre demande et vous devriez recevoir un courriel de notre part dans un délai de deux jours ouvrables, contenant des instructions pour vous connecter au %{app_name}. Cet e-mail contiendra l'objet \"Invitation au %{app_name}\" et sera envoyé par \"no-reply@owenscorning.com\"."
+      contact_instructions: "Si vous souhaitez parler à quelqu'un de votre demande, veuillez contacter <a href=\"mailto:%{assignee_email}\">%{assignee_email}</a>."
+      sign_off: "L'équipe du %{app_name}"
+    request_assigned_assignee: 
+      subject: "Nouvelle demande d'inscription au %{app_name}"
+      html_completion_prompt: "Vous avez reçu une nouvelle demande d'inscription au %{app_name}. Veuillez compléter le processus d'inscription en cliquant sur le bouton ci-dessous. Si la demande a été affectée par erreur, vous pouvez la réaffecter via le même bouton ci-dessous."
+      text_completion_prompt: "Vous avez reçu une nouvelle demande d'inscription au %{app_name}. Veuillez compléter le processus d'inscription en visitant sur le lien ci-dessous. Si la demande a été affectée par erreur, vous pouvez la réaffecter via le même lien ci-dessous."
+      complete_request: "Finaliser la demande"
+      sign_off: "L'équipe du %{app_name}"
+    shared: 
+      closing: "Merci,"
+    footer: 
+      sent_by: "Ce courriel a été envoyé par : Owens Corning 1 Owens Corning Pkwy Toledo, OH, 43659, États-Unis."
+      privacy: "Nous respectons votre droit à la vie privée. <a href=\"http://www.owenscorning.com/privacy-policy\" style=\"color: black\">Cliquez ici pour voir notre politique</a>."
+      disclaimer: "Les informations contenues dans cette communication et ses pièces jointes sont destinées uniquement à l'usage de la personne à qui elles sont adressées et peuvent contenir des informations privilégiées, confidentielles ou exemptes de divulgation. Si vous n’êtes pas le destinataire prévu de ce message, vous êtes informé par la présente que toute diffusion, distribution ou copie de cette communication est strictement interdite. Si vous avez reçu cette communication par erreur, veuillez en informer <a href=\"mailto:postmaster@owenscorning.com\">postmaster@owenscorning.com</a> et supprimer la communication sans conserver de copie."
+      copyright: "LA PANTHÈRE ROSE ™ & © 1964-%{year} Metro-Goldwyn-Mayer Studios Inc. Tous droits réservés. La couleur PINK est une marque déposée de Owens Corning. © %{year} Owens Corning. Tous droits réservés."
+  impersonate: 
+    impersonate_user: "Usurper l'identité de l'utilisateur"
+    member_id: "ID membres"
+    member_id_hint: "Entrez l'ID du membre et la liste des utilisateurs apparaîtra ci-dessous"
+    user: "Utilisateur à imiter"
+    impersonate: "Imiter"
+  devise: 
+    failure: 
+      invitation_expired: "Votre invitation a expiré."
+      invitation_not_found: "Invitation non trouvée ou désactivée. Veuillez vous connecter ci-dessous."
+      inactive_user: "Votre accès a été refusé."
+      request_new_invitation: "Demander une nouvelle invitation."
+      already_authenticated: "Vous etes déjà enregistré"
+      inactive: "Votre compte n'est pas encore activé."
+      invalid: "%{authentication_keys} ou mot de passe invalide."
+      locked: "Votre compte est bloqué."
+      last_attempt: "Il vous reste un essai avant blocage de votre compte."
+      not_found_in_database: "%{authentication_keys} ou mot de passe invalide."
+      timeout: "Votre session a expiré. Merci de vous connecter à nouveau afin de continuer."
+      unauthenticated: "Vous devez vous connecter avant de continuer."
+      unconfirmed: "Vous devez d'abord confirmer votre adresse email avant de continuer."
+    registrations: 
+      new: 
+        sign_up: "Enregistrement"
+        characters_minimum: "caractères minimum"
+      user: 
+        invitation_resubmitted: "Votre demande de ré-invitation a été soumise."
+        invitation_resubmit_original_user: "Le lien permettant de ré-inviter un utilisateur n'est valide que pour l'utilisateur qui a initialement invité l'utilisateur."
+      resubmit: 
+        h1: "Ré-inviter l'utilisateur"
+        invitation_resubmit_confirmation: "Une nouvelle demande d'invitation pour %{to_name} a été envoyée avec succès."
+      destroyed: "Au revoir ! Votre compte a été supprimé. Nous espérons vous revoir bientôt."
+      signed_up: "Bienvenue, vous vous êtes enregistré avec succès."
+      signed_up_but_inactive: "Vous vous êtes enregistré avec succès. Cependant, nous ne pouvons pas vous authentifier car votre compte n'est pas encore activé."
+      signed_up_but_locked: "Vous vous êtes enregistré avec succès. Cependant, nous ne pouvons pas vous authentifier car votre compte est bloqué."
+      signed_up_but_unconfirmed: "Un message avec un lien de confirmation a été envoyé à votre adresse email. Merci de suivre le lien pour activer votre compte."
+      update_needs_confirmation: "Vous avez mis a jour votre compte, mais nous devons vérifier votre nouvelle adresse email. Merci de vérifier votre boite aux lettres et de suivre le lien pour confirmer votre adresse."
+      updated: "Votre compte a été modifié avec succès."
+      set_new_password: "Merci de saisir un nouveau mot de passe."
+    sessions: 
+      invalid_saml_sp: "La session ne peut pas être établie car le domaine est incorrectement configuré. Veuillez réessayer plus tard."
+      signed_in: "Connexion réussie."
+      signed_out: "Déconnexion réussie."
+      already_signed_out: "Déconnecté avec succès."
+      not_found_in_database: "Login ou mot de passe invalide."
+      new: 
+        login: "Connection"
+        logging_in: "Connexion..."
+        username_or_email: "Username ou email"
+        remember_me: "Se souvenir de moi"
+        need_to_register: "Besoin de vous enregistrer ?"
+    confirmations: 
+      new: 
+        resend_confirmation_instructions: "Renvoyer instructions de confirmation"
+        resend_instructions: "Renvoyer instructions"
+      show: 
+        confirmation_almost_done: "Vous avez Presque terminé !"
+        create_password_instructions: "Créez un mot de passe pour accede à votre compte sécurisé."
+        create_password: "Créer mot de passe"
+      confirmed: "Votre email a été confirmé avec succès."
+      send_instructions: "Vous recevrez un email afin de confirmer votre adresse dans quelques minutes."
+      send_paranoid_instructions: "Si votre adresse email existe dans notre base de données, vous recevrez dans quelques minutes un email de confirmation."
+    passwords: 
+      edit: 
+        change_your_password: "Modifiez votre mot de passe"
+        new_password: "Nouveau mot de passe"
+        confirm_new_password: "Confirmez votre nouveau mot de passe"
+        change_my_password: "Changer mon mot de passe"
+        new_password_hint: "doit contenir au moins 1 lettre, 1 chiffre et 1 caractère spécial ($, @, !, %, *, #, ., ?, &)"
+      new: 
+        forgot_password_upper: "Mot de passe perdu ?"
+        send_reset_instructions: "Envoyer instructions de réinitialisation"
+      no_token: "Vous ne pouvez accéder à cette page sans un email de réinitialisation de mot de passe. Si vous vous connecter via un email de réinitialisation de mot de passe, assurez-vous que vous utilisez l'URL proposé complet."
+      send_instructions: "Vous recevrez dans quelques minutes un email afin de réinitialiser votre mot de passe."
+      send_paranoid_instructions: "Si votre adresse email existe dans notre base de données, vous recevrez dans quelques minutes un email afin de retrouver votre mot de passe."
+      updated: "Votre mot de passe a été modifié. Vous êtes maintenant connecté."
+      updated_not_active: "Votre mot de passe est modifié."
+    user_profile: 
+      edit: 
+        edit_user: "Modifier utilisateur"
+        values_managed_through_provider: "Les valeurs suivantes sont gérés par votre %{provider} identifiants."
+        return: "Retour"
+        must_be_unique: "doit être unique"
+        waiting_confirmation: "En attente de confirmation pour :"
+        can_leave_blank_html: "laissez le vide si vous ne voulez pas le modifier"
+        need_current_password: "Veuillez saisir votre mot de passe pour confirmer les modifications"
+        update: "Mise à jour"
+    unlocks: 
+      send_instructions: "Vous recevrez un email dans quelques minutes afin de débloquer votre compte."
+      send_paranoid_instructions: "Si votre compte existe, vous recevrez dans quelques minutes un email afin de le débloquer."
+      unlocked: "Votre compte a été débloqué avec succès. Merci de vous connecter pour continuer."
+      new: 
+        resend_unlock_instructions: "Renvoyer instructions de déblocage"
+    mailers: 
+      confirmation_instructions: 
+        confirm_account_instructions: "Vous pouvez confirmer votre compte email en utilisant le lien suivant :"
+        confirm_my_account: "Confirmer mon compte"
+      password_change: 
+        password_change_notification: "Nous vous contactons pour vous notifier le changement de votre mot de passe  "
+      reset_password_instructions: 
+        requested_password_change: "Une personne a demandé a changer votre mot de passe. Vous pouvez le faire en utilisant le lien suivant."
+        requested_password_change_with_provider: "Une personne a demandé à changer votre mot de passe %{provider}."
+        check_with_support_provider: "Merci de vérifier avec votre support pour %{provider} aide d'accès au système."
+        change_my_password: "Changer mon mot de passe"
+        if_not_requesting: "Si vous n'avez pas fait une telle demande, merci d'ignorer cet email."
+        create_new_password_instructions: "Votre mot de passe restera inchangé tant que vous n'aurez pas accede au lien suivant et créé un nouveau mot de passe."
+      unlock_instructions: 
+        account_locked: "Votre compte a été bloqué à cause d’un nombre trop importants de tentatives échouées."
+        html_unlock_instructions: "Cliquer sur le lien suivant pour débloquer votre compte:"
+        text_unlock_instructions: "Visit the link below to unlock your account:"
+        unlock_my_account: "Débloquer mon compte"
+    mailer: 
+      confirmation_instructions: 
+        subject: "Instructions de confirmation"
+      reset_password_instructions: 
+        subject: "Instructions pour réinitialiser le mot de passe"
+      unlock_instructions: 
+        subject: "Instructions de déblocage"
+    omniauth_callbacks: 
+      failure: "Nous n'avons pu vous authentifier car %{kind} : '%{reason}'."
+      success: "Authentification réussie du compte %{kind}."
+    shared: 
+      owens_corning_login: "Connexion Owens Corning"
+      customer_portal: "Portail client"
+      welcome: "Bienvenue"
+      hello: "Bonjour"
+      close: "Fermer"
+      log_in: "Log in"
+      forgot_password_lower: "Mot de passe perdu ?"
+      did_not_receive_confirmation_instructions: "Avez-vous reçu les instructions de confirmation ?"
+      did_not_receive_unlock_instructions: "Avez-vous reçu les instructions de déblocage ?"
+      sign_in_with: "Se connecter avec %{provider}"
+      profile: "Profil"
+      logout: "Se déconnecter"
+      signing_out: "Deconnexion..."
+      welcome_to: "Bienvenue sur"
+      email: "Email"
+      password: "Mot de passe"
+      password_confirmation: "Confirmation mot de passe"
+      current_password: "Mot de passe actuel"
+      first_name: "Prénom"
+      last_name: "Nom"
+      click_to_log_in: "Cliquer sur le lien suivant afin de vous connecter"
+      login_to: "Connexion à"
+  rails_admin: 
+    admin: "Admin"
+  errors: 
+    not_authorized: "Vous n’êtes pas autorisé à affectuer cette action."
+    messages: 
+      blank: "%{attribute} est requis"
+      invalid: " est invalide."
+      already_confirmed: "déjà confirmé, merci d'essayer de vous connecter"
+      confirmation_period_expired: "doit être confirmé dans %{period}, merci de faire une nouvelle demande"
+      expired: "a expiré. Merci de demander à nouveau"
+      not_found: "non trouvé"
+      not_locked: "non bloqué"
+      not_saved: 
+        one: "Une erreur a empêché l'enregistrement de %{resource} :"
+        other: "%{count} des erreurs ont empêché l'enregistrement de %{resource} :"
+  simple_form: 
+    'true': "Oui"
+    'false': "Non"
+    required: 
+      text: "Requis"
+      mark: "*"
+    error_notification: 
+      default_message: "Merci de verifier les erreurs ci-dessous :"

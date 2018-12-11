@@ -1,0 +1,16 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <ActivityId CorrelationId="48560d09-6b10-4645-83e9-2e8e158f1544" xmlns="http://schemas.microsoft.com/2004/09/ServiceModel/Diagnostics">48f8f201-9851-4ffb-a93f-ce995efb4602</ActivityId>
+  </s:Header>
+  <s:Body>
+    <GetUserDetailsByEmailAddressResponse xmlns="http://tempuri.org/">
+      <GetUserDetailsByEmailAddressResult xmlns:a="http://schemas.datacontract.org/2004/07/OCUserService.Services" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:EmailAddress>doodz@doodz.com</a:EmailAddress>
+        <a:FirstName>Scrooge</a:FirstName>
+        <a:LastName>McDuck</a:LastName>
+        <a:UserAccountControl>66048</a:UserAccountControl>
+        <a:UserName>doodz</a:UserName>
+      </GetUserDetailsByEmailAddressResult>
+    </GetUserDetailsByEmailAddressResponse>
+  </s:Body>
+</s:Envelope>

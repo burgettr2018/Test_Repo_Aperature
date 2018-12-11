@@ -1,0 +1,21 @@
+<% digital_data(global: {pageSection: 'abc-acount-not-found'}) %>
+<div id="main_content" data-section="" data-page="">
+  <div class="container">
+    <div class="white-wrap">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-header">
+            <h1><%= @user.try(:first_name)||'Hmm'%>, we cannot find your Owens Corning Portal Account</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p>We have sent a message to our support team to figure out what happened.</p>
+          <p>If you need immediate assistance, please call us at 1-800-GET-PINK (1-800-438-7465) or <a href="https://www.owenscorning.com/contact-us">Contact Us</a> on our website.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

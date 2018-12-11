@@ -1,0 +1,38 @@
+/*
+.NFI-wrapper {}
+.NFI-button {}
+.NFI-button:hover {}
+.NFI-filename {}
+.NFI-current {}
+*/
+.NFI-button {
+  text-shadow: 0px -1px 0px $oc-black;
+  background: $gray;
+  color: $white;
+  width: 90px;
+  height: 36px;
+  line-height: 36px;
+  transition: all 0.25s ease-in-out;
+}
+.NFI-button:hover {
+  background: $oc-black;
+  text-shadow: 0px -1px 0px $oc-black;
+}
+.NFI-wrapper {
+  display: block !important;
+  overflow: hidden !Important;
+}
+.NFI-filename {
+  width: 200px;
+  border: 0;
+  height: 36px;
+  line-height: 36px;
+  background: $white;
+  color: $gray;
+  box-sizing:border-box;
+}
+.job_lowes_po_pdf, .job_lowes_pse_pdf {
+  > label {
+    display: block;
+  }
+}

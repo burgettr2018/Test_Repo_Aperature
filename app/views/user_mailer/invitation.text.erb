@@ -1,0 +1,10 @@
+<%= t('user_mailer.invitation.h1', @i18n_params) %>
+
+<% if @invitation.invited_by.present? %>
+    <%= t('user_mailer.invitation.invited_by', @i18n_params) %>
+<% end %>
+<%= t('user_mailer.invitation.text_click_prompt')%> <%= t('user_mailer.invitation.expiry_prompt', @i18n_params) if @expiry.present? %>
+
+<%= @accept_url %>
+
+<%= t("user_mailer.shared.text_contact_prodesk", @i18n_params) if @app == 'CONTRACTOR_PORTAL' %>

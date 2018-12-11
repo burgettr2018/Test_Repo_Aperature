@@ -1,0 +1,7 @@
+<%= content_tag :div, :class => "alert alert-#{ name } alert-dismissable", :role => "alert" do %>
+  <button type="button" class="close" data-dismiss="alert">
+    <span aria-hidden="true">&times;</span>
+    <span class="sr-only"><%= t('devise.shared.close') %></span>
+  </button>
+  <%= msg %>
+<% end %>

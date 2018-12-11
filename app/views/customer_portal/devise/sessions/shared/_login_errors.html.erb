@@ -1,0 +1,5 @@
+<div class="cp-sign-in__errors">
+  <% flash.each do |name, msg| %>
+    <%= render partial: "devise/shared/error", locals: { name: name, msg: msg } %>
+  <% end %>
+</div>

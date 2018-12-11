@@ -1,0 +1,83 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Helvetica Neue,Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif" />
+      <mj-class name="footer" font-size="10px" line-height="15px" padding="0 25px 15px" />
+      <mj-class name="p" color="#57575a" font-size="14px" line-height="19px" />
+    </mj-attributes>
+  </mj-head>
+  
+  <mj-body>
+    <mj-container>
+      <% if @app == 'CUSTOMER_PORTAL' %>
+        <%= render :partial => 'customer_portal/user_mailer/header', :formats => [:html] %>
+      <% elsif @app == 'CONTRACTOR_PORTAL' %>
+        <%= render :partial => 'contractor_portal/user_mailer/header', :formats => [:html] %>
+      <% else %>
+        <%= render :partial => 'generic_header', :formats => [:html] %>
+      <% end %>
+
+      <mj-section padding="0 0 25px">
+        <mj-column width="100%">
+          <% if @strong_header_content.present? %>
+            <mj-text text-transform="uppercase" font-size="21px" color="#57575a"><%= @strong_header_content %></mj-text>
+          <% end %>
+
+          <% if @header_content.present? %>
+            <mj-text mj-class="p"><%= @header_content %></mj-text>
+          <% end %>
+
+          <% @body_content.each do |section| %>
+            <% if section[:type] == 'copy_block' %>
+              <mj-text mj-class="p">
+                <%= raw section[:text] %>
+              </mj-text>
+            <% elsif section[:type] == 'cta' %>
+              <mj-button href="<%= section[:url] %>"
+                         background-color="#ce1126"
+                         text-transform="uppercase"
+                         border-radius="0"
+                         font-size="14px"
+              >
+                <%= section[:text] %>
+              </mj-button>
+            <% elsif section[:type] == 'text_link' %>
+              <mj-text mj-class="p">
+                <a href="<%= section[:url] %>" style="color:#ce1126">
+                  <%= section[:text] %>
+                </a>
+              </mj-text>
+            <% end %>
+          <% end %>
+
+          <% if @signoff.present? %>
+              <mj-text mj-class="p">
+                <%= t('user_mailer.shared.closing') %>
+              </mj-text>
+
+              <mj-text mj-class="p">
+                <strong><%= @signoff %></strong>
+              </mj-text>
+          <% end %>
+        </mj-column>
+      </mj-section>
+      
+      <mj-section background-color="#cfcfcf">
+        <mj-column width="100%">
+          <mj-text mj-class="footer">
+            <%= t('user_mailer.footer.sent_by') %>
+          </mj-text>
+          <mj-text mj-class="footer">
+            <%= raw t('user_mailer.footer.privacy') %>
+          </mj-text>
+          <mj-text mj-class="footer">
+            <%= raw t('user_mailer.footer.disclaimer') %>
+          </mj-text>
+          <mj-text mj-class="footer">
+            <%= t('user_mailer.footer.copyright', {year: Date.today.year}) %>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-container>
+  </mj-body>
+</mjml>

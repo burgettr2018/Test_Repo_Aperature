@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <GetADUserEmailByUserIdResponse xmlns="http://tempuri.org/">
+      <GetADUserEmailByUserIdResult>doodz@doodz.com</GetADUserEmailByUserIdResult>
+    </GetADUserEmailByUserIdResponse>
+  </s:Body>
+</s:Envelope>

@@ -1,0 +1,16 @@
+<h4>
+  Are you sure you want to revoke this API token
+  &ldquo;<%= @model_config.with(object: @object).object_label %>&rdquo;
+</h4>
+
+<%= form_for(@object, url: revoke_access_token_path(model_name: @abstract_model.to_param, id: @object.id), html: {method: "delete"}) do |f| %>
+<input type="hidden" name="return_to" value="<%=(params[:return_to].presence || request.referer)%>">
+<%= f.button class: 'btn btn-danger', :'data-disable-with' => t("admin.form.confirmation") do %>
+  <i class="icon-white icon-ok"></i>
+  <%= t("admin.form.confirmation") %>
+<% end %>
+<%= f.button class: 'btn', name: '_continue', :'data-disable-with' => t("admin.form.cancel") do %>
+  <i class="icon-remove"></i>
+  <%= t("admin.form.cancel") %>
+<% end %>
+<% end %>

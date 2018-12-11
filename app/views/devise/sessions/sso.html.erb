@@ -1,0 +1,169 @@
+<% digital_data(global: {pageSection: 'sso'}) %>
+<div id="main_content" data-section="" data-page="">
+	<div class="container">
+		<div class="white-wrap">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="page-header">
+						<h1><%= @title %></h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<p class="h2">
+						<i class="fa fa-spinner fa-spin mrm mlm"></i><%= @message %>
+					</p>
+				</div>
+			</div>
+		</div>
+    <div id="loginDiv"></div>
+	</div>
+  <script type="text/javascript">
+    var loggedIn = function() {
+
+    };
+    var notLoggedIn = function() {
+
+    };
+    var loginUnknown = function() {
+
+    }
+  </script>
+  <% if @saml_response.present? %>
+    <div class="hidden">
+      <%= form_tag(@saml_acs_url) do %>
+          <%= hidden_field_tag("SAMLResponse", @saml_response) %>
+          <%= submit_tag "Submit" %>
+      <% end %>
+    </div>
+    <script type="text/javascript">
+      document.forms[0].submit();
+    </script>
+  <% elsif @maritz_sso_data.present? %>
+      <div class="hidden">
+        <form action="<%= @application.application_uri %>" method="post">
+            <%= hidden_field_tag("PartnerIdentifier", ENV['UMS_SSO_MARITZ_PARTNER_ID']) %>
+            <%= hidden_field_tag("ClientIdentifier", ENV['UMS_SSO_MARITZ_CLIENT_ID']) %>
+            <%= hidden_field_tag("clientProjectKey", ENV['UMS_SSO_MARITZ_CLIENT_PROJECT_KEY']) %>
+            <%= hidden_field_tag("destinationKey", ENV['UMS_SSO_MARITZ_DESTINATION_KEY']) %>
+            <%= hidden_field_tag("userToken", @maritz_sso_data) %>
+            <%= submit_tag "Submit" %>
+        </form>
+      </div>
+      <script type="text/javascript">
+        document.forms[0].submit();
+      </script>
+  <% elsif @slo.present? || @sso.present? || @estore_sso.present? %>
+    <% if @sso.present? %>
+      <script type="text/javascript">
+        loggedIn = function() {
+          window.location = '<%== @redirect_to %>';
+        };
+        notLoggedIn = function() {
+          document.getElementById('loginDiv').innerHTML = '<%== j @sso_contents %>';
+          document.forms[0].submit();
+        };
+      </script>
+    <% end %>
+    <% if @slo.present? %>
+      <script type="text/javascript">
+        loggedIn = function() {
+          window.location = '<%== ENV['UMS_ADFS_LOGOUT_URL'] %>';
+        };
+        notLoggedIn = function() {
+          window.location = '/users/sign_in';
+        };
+      </script>
+    <% end %>
+    <% if @estore_sso.present? %>
+      <iframe id="sso_frame1" style="width:0;height:0;border:0; border:none;"></iframe>
+      <script type="text/javascript">
+        var doingSso = false;
+        function doSso() {
+          if (!doingSso) {
+						doingSso = true;
+						document.getElementById('loginDiv').innerHTML = '<%== j @sso_contents %>';
+						//alert('submitting the sso adfs form');
+						document.forms[0].submit();
+					}
+        }
+        loggedIn = function() {
+					//alert('logged in ADFS, logout, then proceed with sso login and estore redirect');
+					//function messageHandler2(event) {
+						//if (event.data === 'loaded') {
+							//window.removeEventListener('message', messageHandler2, true);
+						//	doSso();
+						//}
+          //}
+					function messageHandler1(event) {
+						//if (event.data === 'loaded') {
+              //window.removeEventListener('message', messageHandler1, true);
+							//window.addEventListener('message', messageHandler2, true);
+              document.getElementById('sso_frame1').src = '<%== @estore_logout_url %>';
+							setTimeout(doSso, 1000);
+						//}
+          }
+					//window.addEventListener('message', messageHandler1, true);
+					document.getElementById('sso_frame1').src = '<%== @adfs_logout_url %>';
+					setTimeout(messageHandler1, 1000);
+				};
+        notLoggedIn = function() {
+          //alert('not logged in ADFS, make sure not logged in store and proceed with sso login and estore redirect');
+					function messageHandler2(event) {
+						//if (event.data === 'loaded') {
+							//window.removeEventListener('message', messageHandler2, true);
+							doSso();
+						//}
+					}
+					//window.addEventListener('message', messageHandler2, true);
+					document.getElementById('sso_frame1').src = '<%== @estore_logout_url %>';
+					setTimeout(doSso, 1000);
+        };
+      </script>
+    <% end %>
+    <script type="text/javascript">
+			function createCORSRequest(method, url){
+				var xhr = new XMLHttpRequest();
+				if ("withCredentials" in xhr){
+					xhr.open(method, url, true);
+					xhr.withCredentials = true;
+				} else if (typeof XDomainRequest != "undefined"){
+					xhr = new XDomainRequest();
+					xhr.open(method, url);
+				} else {
+					xhr = null;
+				}
+				return xhr;
+			}
+			var xhr = createCORSRequest('GET', '<%== @test_url %>');
+			if (xhr) {
+				xhr.send(null);
+				xhr.onreadystatechange = function () {
+					var DONE = 4;
+					if (xhr.readyState === DONE) {
+						if (xhr.status === 200) {
+							loggedIn();
+						} else {
+							notLoggedIn();
+						}
+					} else {
+						if (xhr.status !== 200) {
+							loginUnknown();
+						}
+					}
+				};
+			}
+    </script>
+  <% end %>
+  <% if @slo_applications.present? && @slo_applications.exists? %>
+    <% @slo_applications.each do |app| %>
+      <iframe src="<%= app.logout_url %>" style="width:0;height:0;border:0; border:none;"></iframe>
+    <% end %>
+    <script>
+			setTimeout(function() {
+				window.location = '<%= j @logout_url %>';
+      }, 1000);
+    </script>
+  <% end %>
+</div>

@@ -1,0 +1,295 @@
+en: 
+  activerecord: 
+    errors: 
+      models: 
+        user: 
+          attributes: 
+            email: 
+              invalid: "isn't valid."
+  footer: 
+    legal_html: "&copy; 1996-%{year} Owens Corning The color PINK is a registered trademark of Owens Corning.<br>THE PINK PANTHER &trade; and &copy; 1964-%{year} Metro-Goldwyn-Mayer Studios Inc. All Rights Reserved."
+  user_mailer: 
+    app_name: 
+      customer_portal: "Owens Corning Customer Portal"
+    invitation: 
+      subject: "%{app_name} Invitation%{from_name}"
+      h1: "Congratulations! You've been invited to an account on %{app_name}"
+      invited_by: "%{name} has invited you to an account on %{app_name}."
+      html_click_prompt: "To accept this invitation, click the button below to create your account."
+      text_click_prompt: "To accept this invitation, visit the link below to create your account."
+      expiry_prompt: "Your invitation will automatically expire in %{period}."
+      create_account: "Create Account"
+      customer_portal: 
+        salutation: "Hello %{name},"
+        html_accept_instructions: "Congratulations! Your account has been set up for the %{app_name}! To access the portal, please click the one-time registration button below to create a password and access your account. This button will allow you to set up your password and will only work one time."
+        text_accept_instructions: "Congratulations! Your account has been set up for the %{app_name}! To access the portal, please visit the one-time registration link below to create a password and access your account. This link will allow you to set up your password and will only work one time."
+        access_portal: "Access Portal"
+        portal_link_prompt: "Once you've set up your password, please use the following link whenever you wish to log back into the portal."
+        thank_you_instructions: "Thank you for signing up for the Customer Portal! If you have any difficulty accessing your account, please contact <a href=\"mailto:%{assignee_email}\">%{assignee_email}</a>."
+        sign_off: "%{app_name} Team"
+    invitation_reminder: 
+      subject: "%{app_name} Invitation%{from_name} Expires Soon"
+      h1: "Reminder! Your invitation%{from_name} is still waiting"
+      invited_by: "Your invitation%{from_name} to join %{app_name} will expire in %{period}."
+      html_click_prompt: "To accept this invitation, click the button below to create your account."
+      text_click_prompt: "To accept this invitation, visit the link below to create your account."
+      expiry_prompt: ""
+      create_account: "Create Account"
+    invitation_expired_invitee: 
+      subject: "%{app_name} Invitation%{from_name} Has Expired"
+      h1: "Your invitation has expired"
+      invited_by: "Your invitation%{from_name} to join %{app_name} has expired."
+      html_click_prompt: "If you would like to request a new invitation%{from_name}, click the button below. We will send an email to %{from_email} with your request for a new invite."
+      text_click_prompt: "If you would like to request a new invitation%{from_name}, visit the link below. We will send an email to %{from_email} with your request for a new invite."
+      expiry_prompt: ""
+      create_account: "Request New Invite"
+    invitation_expired_inviter: 
+      subject: "%{app_name} Invitation for %{to_name} Has Expired"
+      h1: "Invitation for %{to_name} has expired"
+      invited_by: "Your invitation to %{to_name} to join %{app_name} has expired."
+      html_click_prompt: "If you would like to send a new invitation to %{to_name}, click the button below. We will send a link to create an account to %{to_email}."
+      text_click_prompt: "If you would like to send a new invitation to %{to_name}, visit the link below. We will send a link to create an account to %{to_email}."
+      expiry_prompt: ""
+      create_account: "Resend Invite"
+    invitation_rerequested_inviter: 
+      subject: "%{app_name} %{to_name} Has Requested a new Invitation"
+      h1: "Please Re-Invite %{to_name}"
+      invited_by: "Your invitation to %{to_name} to join %{app_name} expired, and they would like you to give them another chance."
+      html_click_prompt: "If you would like to send a new invitation to %{to_name}, visit %{app_name} by clicking on the link below."
+      text_click_prompt: "If you would like to send a new invitation to %{to_name}, visit %{app_name} by clicking on the link below."
+      expiry_prompt: ""
+      create_account: "%{app_name}"
+    request_assigned_requester: 
+      subject: "%{app_name} Account Request"
+      salutation: "Hello %{name},"
+      thank_you_instructions: "Thank you for submitting your request for an account on the %{app_name}! We are currently reviewing your request and you should receive an email from us within 2 business days containing instructions for logging into the %{app_name}. This email will have the subject line \"%{app_name} Invitation\" and will be sent from \"no-reply@owenscorning.com.\""
+      contact_instructions: "If you would like to speak to someone about your request, please contact <a href=\"mailto:%{assignee_email}\">%{assignee_email}</a>."
+      sign_off: "%{app_name} Team"
+    request_assigned_assignee: 
+      subject: "New Registration Request for %{app_name}"
+      html_completion_prompt: "You have been assigned a new %{app_name} registration request. Please take action on this request by clicking the button below and completing the registration process. If the request has been assigned in error, you can re-assign it through the same button below."
+      text_completion_prompt: "You have been assigned a new %{app_name} registration request. Please take action on this request by visiting the link below and completing the registration process. If the request has been assigned in error, you can re-assign it through the same link below."
+      complete_request: "Complete Request"
+      sign_off: "%{app_name} Team"
+    shared: 
+      closing: "Thank you,"
+      html_contact_prodesk: "Questions? Email <a href=\"mailto:prodesk@owenscorning.com\">prodesk@owenscorning.com</a>"
+      text_contact_prodesk: "Questions? Email prodesk@owenscorning.com"
+    footer: 
+      sent_by: "This email was sent by: Owens Corning 1 Owens Corning Pkwy Toledo, OH, 43659, US."
+      privacy: "We respect your right to privacy. <a href=\"http://www.owenscorning.com/privacy-policy\" style=\"color: black\">Click here to view our policy</a>."
+      disclaimer: "The information contained in this communication and its attachment(s) is intended only for the use of the individual to whom it is addressed and may contain information that is privileged, confidential, or exempt from disclosure. If the reader of this message is not the intended recipient, you are hereby notified that any dissemination, distribution, or copying of this communication is strictly prohibited. If you have received this communication in error, please notify <a href=\"mailto:postmaster@owenscorning.com\">postmaster@owenscorning.com</a> and delete the communication without retaining any copies. Thank you."
+      copyright: "THE PINK PANTHER™ & © 1964–%{year} Metro-Goldwyn-Mayer Studios Inc. All Rights Reserved. The color PINK is a registered trademark of Owens Corning. © %{year} Owens Corning. All Rights Reserved."
+  impersonate: 
+    impersonate_user: "Impersonate User"
+    member_id: "Member ID"
+    member_id_hint: "Enter member ID and the list of users will populate below"
+    user: "User to Impersonate"
+    impersonate: "Impersonate"
+  devise: 
+    failure: 
+      invitation_expired: "Your invitation has expired."
+      invitation_not_found: "Invitation not found or no longer active. Please log in below."
+      inactive_user: "Your access has been denied."
+      request_new_invitation: "Request new invitation."
+      already_authenticated: "You are already signed in."
+      inactive: "Your account is not activated yet."
+      invalid: "Invalid %{authentication_keys} or password."
+      locked: "Your account is locked."
+      last_attempt: "You have one more attempt before your account is locked."
+      not_found_in_database: "Invalid %{authentication_keys} or password."
+      timeout: "Your session expired. Please sign in again to continue."
+      unauthenticated: "You need to sign in or sign up before continuing."
+      unconfirmed: "You have to confirm your email address before continuing."
+    registrations: 
+      new: 
+        sign_up: "Sign Up"
+        characters_minimum: "characters minimum"
+      user: 
+        invitation_resubmitted: "Your request to be re-invited has been submitted."
+        invitation_resubmit_original_user: "The link to re-invite a user is only valid for the user who originally invited the user."
+      resubmit: 
+        h1: "Re-invite User"
+        invitation_resubmit_confirmation: "A new invitation request for %{to_name} has been successfully sent."
+      destroyed: "Bye! Your account has been successfully cancelled. We hope to see you again soon."
+      signed_up: "Welcome! You have signed up successfully."
+      signed_up_but_inactive: "You have signed up successfully. However, we could not sign you in because your account is not yet activated."
+      signed_up_but_locked: "You have signed up successfully. However, we could not sign you in because your account is locked."
+      signed_up_but_unconfirmed: "A message with a confirmation link has been sent to your email address. Please follow the link to activate your account."
+      update_needs_confirmation: "You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirm link to confirm your new email address."
+      updated: "Your account has been updated successfully."
+      set_new_password: "Please set a new password."
+    sessions: 
+      invalid_saml_sp: "Session cannot be established because the domain is incorrectly configured. Please try again later."
+      signed_in: "Signed in successfully."
+      signed_out: "Signed out successfully."
+      already_signed_out: "Signed out successfully."
+      not_found_in_database: "Invalid login or password."
+      new: 
+        login: "Login"
+        logging_in: "Logging in..."
+        username_or_email: "Username or Email"
+        remember_me: "Remember me"
+        need_to_register: "Need to register?"
+    confirmations: 
+      new: 
+        resend_confirmation_instructions: "Resend Confirmation Instructions"
+        resend_instructions: "Resend Instructions"
+      show: 
+        confirmation_almost_done: "You're Almost Done!"
+        create_password_instructions: "Now create a password to securely access your account."
+        create_password: "Create Password"
+      confirmed: "Your email address has been successfully confirmed."
+      send_instructions: "You will receive an email with instructions for how to confirm your email address in a few minutes."
+      send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes."
+    passwords: 
+      edit: 
+        change_your_password: "Change Your Password"
+        new_password: "New password"
+        confirm_new_password: "Confirm your new password"
+        change_my_password: "Change My Password"
+        new_password_hint: "must contain at least 1 letter, 1 number, and 1 special character ($, @, !, %, *, #, ., ?, &)"
+      new: 
+        forgot_password_upper: "Forgot Your Password?"
+        send_reset_instructions: "Send Reset Instructions"
+      no_token: "You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided."
+      send_instructions: "You will receive an email with instructions on how to reset your password in a few minutes."
+      send_paranoid_instructions: "If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes."
+      updated: "Your password has been changed successfully. You are now signed in."
+      updated_not_active: "Your password has been changed successfully."
+    user_profile: 
+      edit: 
+        edit_user: "Edit User"
+        values_managed_through_provider: "The following values are managed through your %{provider} credentials."
+        return: "Return"
+        must_be_unique: "must be unique"
+        waiting_confirmation: "Currently waiting confirmation for:"
+        can_leave_blank_html: "leave it blank if you don't want to change it<br>must contain at least 1 letter, 1 number, and 1 special character ($, @, !, %, *, #, ., ?, &)"
+        need_current_password: "we need your current password to confirm your changes"
+        update: "Update"
+    unlocks: 
+      send_instructions: "You will receive an email with instructions for how to unlock your account in a few minutes."
+      send_paranoid_instructions: "If your account exists, you will receive an email with instructions for how to unlock it in a few minutes."
+      unlocked: "Your account has been unlocked successfully. Please sign in to continue."
+      new: 
+        resend_unlock_instructions: "Resend Unlock Instructions"
+    mailers: 
+      confirmation_instructions: 
+        confirm_account_instructions: "You can confirm your account email through the link below:"
+        confirm_my_account: "Confirm my account"
+      password_change: 
+        password_change_notification: "We're contacting you to notify you that your password has been changed."
+      reset_password_instructions: 
+        requested_password_change: "Someone has requested a link to change your password. You can do this through the link below."
+        requested_password_change_with_provider: "Someone has requested a link to change your password. Your credentials are managed through %{provider}."
+        check_with_support_provider: "Please check with your support for %{provider} for help accessing the system."
+        change_my_password: "Change my password"
+        if_not_requesting: "If you didn't request this, please ignore this email."
+        create_new_password_instructions: "Your password won't change until you access the link above and create a new one."
+      unlock_instructions: 
+        account_locked: "Your account has been locked due to an excessive number of unsuccessful sign in attempts."
+        html_unlock_instructions: "Click the link below to unlock your account:"
+        text_unlock_instructions: "Visit the link below to unlock your account:"
+        unlock_my_account: "Unlock my account"
+    mailer: 
+      confirmation_instructions: 
+        subject: "Confirmation instructions"
+      reset_password_instructions: 
+        subject: "Reset password instructions"
+      unlock_instructions: 
+        subject: "Unlock instructions"
+    omniauth_callbacks: 
+      failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
+      success: "Successfully authenticated from %{kind} account."
+    shared: 
+      owens_corning_login: "Owens Corning Login"
+      customer_portal: "Customer Portal"
+      welcome: "Welcome"
+      hello: "Hello"
+      close: "Close"
+      log_in: "Log In"
+      forgot_password_lower: "Forgot your password?"
+      did_not_receive_confirmation_instructions: "Didn't receive confirmation instructions?"
+      did_not_receive_unlock_instructions: "Didn't receive unlock instructions?"
+      sign_in_with: "Sign in with %{provider}"
+      profile: "Profile"
+      logout: "Logout"
+      signing_out: "Signing out..."
+      welcome_to: "Welcome to"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+      current_password: "Current password"
+      first_name: "First name"
+      last_name: "Last name"
+      click_to_log_in: "Click the following link to log in to"
+      login_to: "Login to"
+  rails_admin: 
+    admin: "Admin"
+  errors: 
+    not_authorized: "You are not authorized to perform this action."
+    messages: 
+      blank: "%{attribute} is required"
+      invalid: " isn't valid."
+      already_confirmed: "was already confirmed, please try signing in"
+      confirmation_period_expired: "needs to be confirmed within %{period}, please request a new one"
+      expired: "has expired, please request a new one"
+      not_found: "not found"
+      not_locked: "was not locked"
+      not_saved: 
+        one: "1 error prohibited this %{resource} from being saved:"
+        other: "%{count} errors prohibited this %{resource} from being saved:"
+  simple_form: 
+    'true': "Yes"
+    'false': "No"
+    required: 
+      text: "required"
+      mark: "*"
+    error_notification: 
+      default_message: "Please review the problems below:"
+  admin: 
+    actions: 
+      revoke_access_token: 
+        menu: "Revoke"
+        title: "Revoking access..."
+        breadcrumb: "Revoke"
+      get_jwt: 
+        menu: "Get JWT"
+        title: "Generating token..."
+        breadcrumb: "JWT"
+      requeue_dj: 
+        menu: "Requeue"
+        title: "Requeuing job..."
+        breadcrumb: "Requeue"
+        bulk_link: "Requeue selected jobs"
+      resend_to_rce: 
+        menu: "Resend to RCE"
+        title: "Resending job..."
+        breadcrumb: "Resend"
+      resend_invitation_mail: 
+        menu: "Resend Invitation"
+        title: "Resending invitation..."
+        breadcrumb: "Reinvite"
+      requeue_pi_file: 
+        menu: "Generate PI file"
+        title: "Requeuing PI file generation..."
+        breadcrumb: "Generate PI file"
+      sync_user_from_rce: 
+        menu: "Sync from RCE"
+        title: "Resyncing from RCE..."
+        breadcrumb: "Sync from RCE"
+      resend_to_pqs:
+        menu: "Resend to PQS"
+        title: "Resend to PQS..."
+        breadcrumb: "Resend to PQS"
+        bulk_link: "Resend selected records to PQS"
+      requeue_redemption: 
+        menu: "Resend to RCE"
+        title: "Resend to RCE..."
+        breadcrumb: "Resend to RCE"
+        bulk_link: "Resend selected records to RCE"
+      requeue_member_profile_sync: 
+        menu: "Sync from RCE"
+        title: "Resyncing from RCE..."
+        breadcrumb: "Sync from RCE"
+        bulk_link: "Sync selected records from RCE"

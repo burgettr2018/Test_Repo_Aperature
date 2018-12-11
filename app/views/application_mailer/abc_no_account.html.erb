@@ -1,0 +1,20 @@
+<html>
+
+<body>
+
+<h2>An ABC User just tried to login but their Portal Account could not be setup.</h2>
+<br />
+<b>User's Email:</b> <%= @user.email %>
+<br />
+<b>User's First Name:</b> <%= @user.first_name %>
+<br />
+<b>User's Last Name: </b><%= @user.last_name %>
+<br />
+<br />
+<br />
+<b>Data from ABC's Okta:</b>
+<%= @user.provider_metadata.to_s %>
+
+</body>
+
+</html>

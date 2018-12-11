@@ -1,0 +1,290 @@
+fi: 
+  activerecord: 
+    errors: 
+      models: 
+        user: 
+          attributes: 
+            email: 
+              invalid: "ei ole toimiva."
+  footer: 
+    legal_html: "&copy; 1996-%{year} Owens Corning The color PINK is a registered trademark of Owens Corning.<br>THE PINK PANTHER &trade; and &copy; 1964-%{year} Metro-Goldwyn-Mayer Studios Inc. All Rights Reserved."
+  user_mailer: 
+    app_name: 
+      customer_portal: "Owens Corning -asiakasportaali"
+    invitation: 
+      subject: "%{app_name} kutsu%{from_name}"
+      h1: "Onnittelut! Sinut on kutsuttu käyttämään sovellusta%{app_name}"
+      invited_by: "name on kutsunut sinut käyttämään sovellusta%{app_name} ."
+      html_click_prompt: "Jos haluat hyväksyä kutsun, klikkaa alla olevaa painiketta ja luo oma tilisi."
+      text_click_prompt: "Jos haluat hyväksyä kutsun, klikkaa alla olevaa linkkiä ja luo oma tilisi."
+      expiry_prompt: "Kutsusi vanhenee automaattisesti%{period}päivässä."
+      create_account: "Luo tili."
+      customer_portal: 
+        salutation: "Hei%{name} ,"
+        html_accept_instructions: "Onneksi olkoon! Sinulle on luotu tili sovellukseen%{app_name} ! Avataksesi portaalin, klikkaa alla olevaa painiketta ja luo itsellesi uusi salasana. Voit tehdä tämän vain kerran."
+        text_accept_instructions: "Onneksi olkoon! Sinulle on luotu tili sovellukseen %{app_name} ! Avataksesi portaalin, klikkaa alla olevaa linkkiä ja luo itsellesi uusi salasana. Voit tehdä tämän vain kerran."
+        access_portal: "Avaa portaali"
+        portal_link_prompt: "Kun olet luonut itsellesi uuden salasanan, voit käyttää seuraavaa linkkiä avataksesi portaalin uudelleen."
+        thank_you_instructions: "Kiitos että otit asiakasportaalimme käyttöön! Jos sinulla on ongelmia sen käytössä, ole hyvä ja ota minuun yhteyttä: &lt;a href=\"mailto: %{assignee_email} \"&gt; %{assignee_email} &lt;/a&gt;."
+        sign_off: "%{app_name}Tiimi"
+    invitation_reminder: 
+      subject: "%{app_name} kutsusi, jonka lähetti%{from_name} vanhenee pian"
+      h1: "Muistutus! Kutsu, jonka lähetti%{from_name} odottaa edelleen toimenpiteitäsi"
+      invited_by: "%{app_name}kutsu, jonka lähetti%{from_name}vanhentuu%{period}päivän kuluttua."
+      html_click_prompt: "Hyväksy tämä kutsu klikkaamalla alla olevaa painiketta ja luo oma tilisi."
+      text_click_prompt: "Hyväksy tämä kutsu klikkaamalla alla olevaa linkkiä ja luo oma tilisi."
+      expiry_prompt: ""
+      create_account: "Luo tili"
+    invitation_expired_invitee: 
+      subject: "%{app_name} kutsu, jonka lähetti%{from_name} on vanhentunut"
+      h1: "Kutsusi on vanhentunut"
+      invited_by: "%{app_name}kutsusi, jonka lähetti%{from_name}on vanhentunut."
+      html_click_prompt: "Jos haluat, että%{from_name}lähettää sinulle uuden kutsun, klikkaa alla olevaa painiketta. Lähetämme pyyntösi osoitteeseen%{from_email} ja saat uuden kutsun."
+      text_click_prompt: "Jos haluat, että %{from_name}lähettää sinulle uuden kutsun, klikkaa alla olevaa linkkiä. Lähetämme pyyntösi osoitteeseen %{from_email} ja saat uuden kutsun."
+      expiry_prompt: ""
+      create_account: "Pyydä uusi kutsu"
+    invitation_expired_inviter: 
+      subject: "%{app_name} kutsu käyttäjälle %{to_name} on vanhentunut"
+      h1: "Kutsu käyttäjälle%{to_name} on vanhentunut"
+      invited_by: "Kutsusi käyttäjälle%{to_name} palveluun%{app_name} on vanhentunut."
+      html_click_prompt: "Jos haluat lähettää uuden kutsun käyttäjälle%{to_name} , klikkaa alla olevaa painiketta. Lähetämme linkin osoitteeseen%{to_email} ."
+      text_click_prompt: "\n\n\n\n\t\t\t\t\t\t\t\t\tJos haluat lähettää uuden kutsun käyttäjälle\n\t\t\t\t\t\t\t\t\t\tto_name\n\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\t\t\t\t\t\t\t\t\t, klikkaa alla olevaa linkkiä. Lähetämme linkin osoitteeseen\n\t\t\t\t\t\t\t\t\t\tto_email\n\t\t\t\t\t\t\t\t\t\n\n\n\n\n\t\t\t\t\t\t\t.\n\t\t\t\t\t\t"
+      expiry_prompt: ""
+      create_account: "Lähetä uusi kutsu"
+    invitation_rerequested_inviter: 
+      subject: " %{to_name} on pyytänyt uuden kutsun sovellukseen%{app_name}"
+      h1: "Lähetä uusi kutsu käyttäjälle%{to_name}"
+      invited_by: "Kutsusi käyttäjälle%{to_name} sovellukseen%{app_name} vanheni ja he haluaisivat saada uuden mahdollisuuden."
+      html_click_prompt: "\n\n\n\n\t\t\t\t\t\t\t\t\tJos haluat lähettää uuden kutsun käyttäjälle\n\t\t\t\t\t\t\t\t\t\tto_name\n\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\t\t\t\t\t\t\t\t\t, avaa     \n\t\t\t\t\t\t\t\t\t\t%{app_name}\n\t\t\t\t\t\t\t\t\t\n\n\n\n\n\t\t\t\t\t\t\t klikkaamalla alla olevaa linkkiä."
+      text_click_prompt: "Jos haluat lähettää uuden kutsun käyttäjälle%{to_name} , avaa%{app_name} klikkaamalla alla olevaa linkkiä."
+      expiry_prompt: ""
+      create_account: "%{app_name}"
+    request_assigned_requester: 
+      subject: "%{app_name} uuden tilin luontipyyntö"
+      salutation: "\n\n\n\n\t\t\t\t\t\t\t\t\tHeiname\n\t\t\t\t\t\t\t\t\t\n\n\n\n\n\t\t\t\t\t\t\t,\n\t\t\t\t\t\t"
+      thank_you_instructions: "Kiitos%{app_name}hakemuksestasi! Käsittelemme hakemuksesi ja toimitamme sinulle kahden arkipäivän sisällä sähköpostiin ohjeet siitä, miten pääset kirjautumaan sisään%{app_name}imme . Sähköposti toimitetaan otsikolla \" %{app_name} kutsu\" ja se lähetetään osoitteesta \"no-reply@owenscorning.com.\""
+      contact_instructions: "Jos haluat olla meihin yhteydessä hakemukseesi liittyen, lähetä sähköpostia osoitteeseen&lt;a href=\"mailto: %{assignee_email} \"&gt; %{assignee_email} &lt;/a&gt;."
+      sign_off: "%{app_name} Tiimi"
+    request_assigned_assignee: 
+      subject: "Uusi käyttäjätilihakemus sovellukseen%{app_name}"
+      html_completion_prompt: "Sinulle on osoitettu uusi%{app_name} käyttäjähakemus. Käsittele ja täydennä rekisteröitymislomake klikkaamalla alla olevaa painiketta. Jos et ole oikea henkilö käsittelemään tätä hakemusta, ole hyvä ja ohjaa hakemus oikealle henkilölle. Voit tehdä sen saman painikkeen takaa."
+      text_completion_prompt: "Sinulle on osoitettu uusi%{app_name} käyttäjähakemus. Käsittele ja täydennä rekisteröitymislomake klikkaamalla alla olevaa linkkiä. Jos et ole oikea henkilö käsittelemään tätä hakemusta, ole hyvä ja ohjaa hakemus oikealle henkilölle. Voit tehdä sen saman linkin takaa."
+      complete_request: "Täydennä rekisteröitymislomake"
+      sign_off: "%{app_name} Tiimi"
+    shared: 
+      closing: "Kiitos,"
+      html_contact_prodesk: "Kysymyksiä? Lähetä sähköpostia <a href=\"mailto:prodesk@owenscorning.com\">prodesk@owenscorning.com</a>"
+      text_contact_prodesk: "Kysymyksiä? Lähetä sähköpostia prodesk@owenscorning.com"
+    footer: 
+      sent_by: "Tämän sähköpostin lähetti: Owens Corning 1 Owens Corning Pkwy Toledo, OH, 43659, US."
+      privacy: "Me kunnioitamme yksityisyyttäsi. <a href=\"http://www.owenscorning.com/privacy-policy\" style=\"color: black\">Klikkaa tästä auki tietosuojaselosteemme</a>."
+      disclaimer: "The information contained in this communication and its attachment(s) is intended only for the use of the individual to whom it is addressed and may contain information that is privileged, confidential, or exempt from disclosure. If the reader of this message is not the intended recipient, you are hereby notified that any dissemination, distribution, or copying of this communication is strictly prohibited. If you have received this communication in error, please notify <a href=\"mailto:postmaster@owenscorning.com\">postmaster@owenscorning.com</a> and delete the communication without retaining any copies. Thank you."
+      copyright: "THE PINK PANTHER™ & © 1964–%{year} Metro-Goldwyn-Mayer Studios Inc. All Rights Reserved. The color PINK is a registered trademark of Owens Corning. © %{year} Owens Corning. All Rights Reserved."
+  impersonate: 
+    impersonate_user: "Impersonoi käyttäjää"
+    member_id: "Käyttäjä-ID"
+    member_id_hint: "Anna käyttäjä-ID ja lista käyttäjistä näytetään alla"
+    user: "Impersonoitava käyttäjä"
+    impersonate: "Impersonoi"
+  devise: 
+    failure: 
+      invitation_expired: "Kutsusi on vanhentunut."
+      invitation_not_found: "Kutsua ei löytynyt tai se on vanhentunut. Kirjaudu sisään alta."
+      inactive_user: "Pääsy estetty."
+      request_new_invitation: "Pyydä uusi kutsu."
+      already_authenticated: "Olet jo kirjautuneena palveluun."
+      inactive: "Tiliäsi ei ole vielä aktivoitu."
+      invalid: "Väärä%{authentication_keys} tai salasana."
+      locked: "Tilisi on lukittu."
+      last_attempt: "Sinulla on yksi yritys jäljellä ennen kuin tilisi lukitaan."
+      not_found_in_database: "Väärä%{authentication_keys} tai salasana."
+      timeout: "Istuntosi on vanhentunut. Jatkaaksesi käyttöä sinun tulee kirjautua uudelleen."
+      unauthenticated: "Sinun täytyy kirjautua sisään jatkaaksesi."
+      unconfirmed: "Sinun täytyy vahvistaa sähköpostiosoitteesi ennen kuin voit jatkaa."
+    registrations: 
+      new: 
+        sign_up: "Kirjaudu sisään"
+        characters_minimum: "merkkejä vähintään"
+      user: 
+        invitation_resubmitted: "Toiveesi saada uusi kutsu on lähetetty."
+        invitation_resubmit_original_user: "Linkki, jolla voi lähettää kutsun uudelleen, toimii ainoastaan henkilölle, joka lähetti alkuperäisen kutsun."
+      resubmit: 
+        h1: "Kutsu käyttäjä uudelleen"
+        invitation_resubmit_confirmation: "Uusi kutsupyyntö henkilölle%{to_name} on lähetetty onnistuneesti."
+      destroyed: "Näkemiin! Tilisi on onnistuneesti poistettu. Toivottavasti näemme pian uudelleen."
+      signed_up: "Tervetuloa! Olet kirjautunut onnistuneesti."
+      signed_up_but_inactive: "Kirjautuminen onnistui. Emme voi kuitenkaan vielä päästää sinua sisään, koska tiliäsi ei ole vielä aktivoitu."
+      signed_up_but_locked: "Kirjautuminen onnistui. Emme voi kuitenkaan päästää sinua sisään, koska tilisi on lukittu."
+      signed_up_but_unconfirmed: "Antamaasi sähköpostiosoitteeseen on lähetetty vahvistuslinkki. Ole hyvä ja klikkaa linkkiä aktivoidaksesi tilisi."
+      update_needs_confirmation: "Tietosi päivitettiin onnistuneesti, mutta haluamme tarkistaa uuden sähköpostiosoitteesi. Tarkista sähköpostisi ja vahvista uusi osoitteesi klikkaamalla sinne lähetettyä linkkiä."
+      updated: "Tietosi on päivitetty onnistuneesti."
+      set_new_password: "Aseta uusi salasana."
+    sessions: 
+      invalid_saml_sp: "Istuntoa ei voida muodostaa, koska domain on väärin määritelty. Yritä myöhemmin uudelleen. "
+      signed_in: "Sisäänkirjautuminen onnistui."
+      signed_out: "Uloskirjautuminen onnistui."
+      already_signed_out: "Uloskirjautuminen onnistui."
+      not_found_in_database: "Väärä käyttäjätunnus tai salasana."
+      new: 
+        login: "Kirjaudu sisään"
+        logging_in: "Kirjautuminen käynnissä..."
+        username_or_email: "Käyttäjätunnus tai Email"
+        remember_me: "Muista minut"
+        need_to_register: "Haluatko tunnukset?"
+    confirmations: 
+      new: 
+        resend_confirmation_instructions: "Lähetä vahvistusohjeet uudelleen"
+        resend_instructions: "Lähetä ohjeet uudelleen"
+      show: 
+        confirmation_almost_done: "Melkein valmista!"
+        create_password_instructions: "Luo nyt salasana."
+        create_password: "Luo salasana"
+      confirmed: "Sähköpostiosoitteesi on onnistuneesti vahvistettu."
+      send_instructions: "Saat kohta sähköpostiisi viestin, jossa on ohjeet sähköpostiosoitteesi vahvistamiseksi."
+      send_paranoid_instructions: "Jos sähköpostiosoitteesi löytyy tietokannastamme, saat kohta sähköpostiisi viestin, jossa on ohjeet sähköpostiosoitteesi vahvistamiseksi."
+    passwords: 
+      edit: 
+        change_your_password: "Vaihda salasanasi"
+        new_password: "Uusi salasana"
+        confirm_new_password: "Anna uusi salasanasi uudestaan"
+        change_my_password: "Vaihda salasana"
+        new_password_hint: "pitää sisältää ainakin yhden kirjaimen, yhden numeron ja yhden erikoismerkin ($, @, !, %, *, #, ., ?, &)"
+      new: 
+        forgot_password_upper: "Unohtuiko salasana?"
+        send_reset_instructions: "Lähetä resetointiohjeet"
+      no_token: "Pääset tälle sivulle vain salasananvaihtoviestistä. Jos kopioit lähetetyn linkin, varmista, että kopioit sen kokonaisena."
+      send_instructions: "Saat kohta sähköpostiisi viestin, jossa on ohjeet salasanan vaihtamiseksi."
+      send_paranoid_instructions: "Jos sähköpostiosoitteesi löytyy tietokannastamme, saat kohta sähköpostiisi viestin, jossa on ohjeet salasanan vaihtamiseksi."
+      updated: "Salasanasi on vaihdettu. Olet nyt kirjautunut sisään."
+      updated_not_active: "Salasanasi on vaihdettu onnistuneesti."
+    user_profile: 
+      edit: 
+        edit_user: "Muokkaa käyttäjää."
+        values_managed_through_provider: "Seuraavia arvoja hallinnoidaan%{provider} tunnuksilla."
+        return: "Takaisin"
+        must_be_unique: "oltava ainutkertainen"
+        waiting_confirmation: "Odottaa vahvistusta:"
+        can_leave_blank_html: "jätä tyhjäksi, jos et halua muuttaa sitä<br>pitää sisältää ainakin yhden kirjaimen, yhden numeron ja yhden erikoismerkin ($, @, !, %, *, #, ., ?, &)"
+        need_current_password: "nykyinen salasana tarvitaan muutosten vahvistamiseksi"
+        update: "Päivitä"
+    unlocks: 
+      send_instructions: "Saat kohta sähköpostiisi viestin, jossa on ohjeet lukkiutuneen tilin avaamiseksi."
+      send_paranoid_instructions: "Jos tilisi on olemassa, saat kohta sähköpostiisi viestin, jossa on ohjeet lukkiutuneen tilin avaamiseksi."
+      unlocked: "Lukkiutunut tilisi on avattu. Kirjaudu sisään jatkaaksesi."
+      new: 
+        resend_unlock_instructions: "Lähetä lukkiutuneen tilin avaamisohjeet uudelleen"
+    mailers: 
+      confirmation_instructions: 
+        confirm_account_instructions: "Voit vahvistaa sähköpostiosoitteen alla olevasta linkistä:"
+        confirm_my_account: "Vahvista tilini"
+      password_change: 
+        password_change_notification: "Lähestymme sinua ilmoittaaksemme, että salasanasi on vaihdettu."
+      reset_password_instructions: 
+        requested_password_change: "Joku on pyytänyt linkin vaihtaakseen salasanasi. Voit tehdä tämän alla olevalla linkillä."
+        requested_password_change_with_provider: "Joku on pyytänyt linkin vaihtaakseen salasanasi. Tunnuksiasi hallinnoi%{provider} ."
+        check_with_support_provider: "Please check with your support for %{provider} for help accessing the system."
+        change_my_password: "Vaihda salasanani"
+        if_not_requesting: "Jos et pyytänyt tätä, voit jättää tämän viestin huomiotta."
+        create_new_password_instructions: "Salasanasi ei vaihdu ennen kuin klikkaat yllä olevaa linkkiä ja luot uuden."
+      unlock_instructions: 
+        account_locked: "Tilisi on lukittu toistuvien epäonnituneiden kirjautumisyritysten vuoksi."
+        html_unlock_instructions: "Klikkaa alla olevaa linkkiä avataksesi lukkiutuneen tilisi:"
+        text_unlock_instructions: "Klikkaa alla olevaa linkkiä avataksesi lukkiutuneen tilisi:"
+        unlock_my_account: "Avaa lukkiutunut tilini"
+    mailer: 
+      confirmation_instructions: 
+        subject: "Vahvistusohjeet"
+      reset_password_instructions: 
+        subject: "Salasanan uusimisohjeet"
+      unlock_instructions: 
+        subject: "Tilin avaamisohjeet"
+    omniauth_callbacks: 
+      failure: "??Could not authenticate you from %{kind} because \" %{reason} \"."
+      success: "??Successfully authenticated from %{kind} account."
+    shared: 
+      owens_corning_login: "Owens Corning kirjautuminen"
+      customer_portal: "Asiakasportaali"
+      welcome: "Tervetuloa"
+      hello: "Hei"
+      close: "Sulje"
+      log_in: "Kirjaudu sisään"
+      forgot_password_lower: "Unohtuiko salasana?"
+      did_not_receive_confirmation_instructions: "Etkö saanut vahvistusohjeita?"
+      did_not_receive_unlock_instructions: "Etkö saanut avausohjeita?"
+      sign_in_with: "Kirjaudu sisään käyttämällä%{provider}palvelua"
+      profile: "Profiili"
+      logout: "Kirjaudu ulos"
+      signing_out: "Kirjautuu ulos..."
+      welcome_to: "Tervetuloa"
+      email: "Email"
+      password: "Salasana"
+      password_confirmation: "Salasanan vahvistus"
+      current_password: "Nykyinen salasana"
+      first_name: "Etunimi"
+      last_name: "Sukunimi"
+      click_to_log_in: "Klikkaa linkkiä ja kirjaudu sisään"
+      login_to: "Kirjaudu sisään"
+  rails_admin: 
+    admin: "Admin"
+  errors: 
+    not_authorized: "SInulla ei ole riittävästi oikeuksia."
+    messages: 
+      blank: "attribute on pakollinen"
+      invalid: "ei ole toimiva."
+      already_confirmed: "vahvistettiin jo, yritä kirjautua sisään"
+      confirmation_period_expired: "vahvistamisen pitää tapahtua%{period}sisällä, pyydä uusi"
+      expired: "on vanhentunut, pyydä uusi"
+      not_found: "ei löydy"
+      not_locked: "ei ollut lukossa"
+      not_saved: 
+        one: "Yksi virhe esti tämän%{resource} tallenuksen:"
+        other: "count kappaletta virheitä esti tämän%{resource} tallennuksen:"
+  simple_form: 
+    'true': "Kyllä"
+    'false': "Ei"
+    required: 
+      text: "pakollinen"
+      mark: "*"
+    error_notification: 
+      default_message: "Tarkista alla olevat ongelmat:"
+  admin: 
+    actions: 
+      revoke_access_token: 
+        menu: "Peruuta"
+        title: "Peruuttaa pääsyn..."
+        breadcrumb: "Peruuta"
+      get_jwt: 
+        menu: "???Get JWT"
+        title: "???Generating token..."
+        breadcrumb: "JWT"
+      requeue_dj: 
+        menu: "Requeue"
+        title: "Requeuing job..."
+        breadcrumb: "Requeue"
+        bulk_link: "Requeue selected jobs"
+      resend_to_rce: 
+        menu: "Resend to RCE"
+        title: "Resending job..."
+        breadcrumb: "Resend"
+      resend_invitation_mail: 
+        menu: "Resend Invitation"
+        title: "Resending invitation..."
+        breadcrumb: "Reinvite"
+      requeue_pi_file: 
+        menu: "Generate PI file"
+        title: "Requeuing PI file generation..."
+        breadcrumb: "Generate PI file"
+      sync_user_from_rce: 
+        menu: "Sync from RCE"
+        title: "Resyncing from RCE..."
+        breadcrumb: "Sync from RCE"
+      requeue_redemption: 
+        menu: "Resend to RCE"
+        title: "Resend to RCE..."
+        breadcrumb: "Resend to RCE"
+        bulk_link: "Resend selected records to RCE"
+      requeue_member_profile_sync: 
+        menu: "Sync from RCE"
+        title: "Resyncing from RCE..."
+        breadcrumb: "Sync from RCE"
+        bulk_link: "Sync selected records from RCE"

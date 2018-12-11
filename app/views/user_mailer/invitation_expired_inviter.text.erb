@@ -1,0 +1,10 @@
+<%#= t('user_mailer.invitation_expired_inviter.h1', @i18n_params)
+    This heading looks funny on text-based email...
+%>
+<%= t('user_mailer.invitation_expired_inviter.invited_by', @i18n_params) %>
+
+<%= t('user_mailer.invitation_expired_inviter.text_click_prompt', @i18n_params)%>
+
+<%= @resubmit_inviter_url %>
+
+<%= t("user_mailer.shared.text_contact_prodesk", @i18n_params) if @app == 'CONTRACTOR_PORTAL' %>

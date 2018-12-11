@@ -1,0 +1,5 @@
+<% if request.local? || request.original_url.match(/(-devel|-stage)/)  %>
+    <script src="//assets.adobedtm.com/b67caa08d65f6a72443c07c8f11cd5e189ded986/satelliteLib-40ad5a01076170c854c4789d56292f6b2093eb63-staging.js"></script>
+<% else %>
+    <script src="//assets.adobedtm.com/b67caa08d65f6a72443c07c8f11cd5e189ded986/satelliteLib-40ad5a01076170c854c4789d56292f6b2093eb63.js"></script>
+<% end %>

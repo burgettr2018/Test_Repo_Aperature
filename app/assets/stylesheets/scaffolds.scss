@@ -1,0 +1,46 @@
+body {
+  background-color: #fff;
+  color: #666;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color:$link-color;
+  transition: all 0.25s ease-in-out;
+  outline: 0 !important;
+}
+.checkbox label {
+  input[type="checkbox"] {
+    margin-top: -8px;
+    top: 50%;
+    vertical-align: middle;
+  }
+}
+
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 180%;
+  }
+
+  h3 {
+    font-size: 140%;
+  }
+}

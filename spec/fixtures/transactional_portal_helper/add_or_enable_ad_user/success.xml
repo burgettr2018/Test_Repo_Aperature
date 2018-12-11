@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <AddOrEnableUserResponse xmlns="http://tempuri.org/">
+      <AddOrEnableUserResult xmlns:a="http://schemas.datacontract.org/2004/07/OCUserService.Services" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:ErrorCode>UserCreatedSuccessfully</a:ErrorCode>
+        <a:ErrorMessage>User doodz created successfully</a:ErrorMessage>
+        <a:ErrorStatus>Success</a:ErrorStatus>
+      </AddOrEnableUserResult>
+    </AddOrEnableUserResponse>
+  </s:Body>
+</s:Envelope>
