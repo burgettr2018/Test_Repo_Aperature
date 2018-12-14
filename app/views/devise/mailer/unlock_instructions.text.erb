@@ -1,9 +1,0 @@
-<%= t('devise.shared.hello') %> <%= @resource.email %>!
-
-<%= t('devise.mailers.unlock_instructions.account_locked') %>
-
-<%= t('devise.mailers.unlock_instructions.text_unlock_instructions') %>
-
-<%= unlock_url(@resource, unlock_token: @token) %>
-
-<%= t("user_mailer.shared.text_contact_prodesk") if @application.try(:name) == 'CONTRACTOR_PORTAL' %>

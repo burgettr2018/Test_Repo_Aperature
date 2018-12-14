@@ -1,2 +1,0 @@
-<input value="<%= local_assigns[:variable] %>" class="form-control" required="required" size="50" type="text" readonly name="saml_identity_provider[token]" id="saml_identity_provider_token">
-<span class="help-block">Set this as the SAML postback url (SAML ACS):<br><input data-format="<%= "#{ENV['UMS_OC_OAUTH_HOST']}/users/auth/$$/callback" %>" value="<%= "#{ENV['UMS_OC_OAUTH_HOST']}/users/auth/#{local_assigns[:variable]}/callback" %>" size="50" type="text" readonly name="saml_identity_provider[tokenText]" id="saml_identity_provider_tokenText"></span>

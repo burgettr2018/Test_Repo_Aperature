@@ -1,7 +1,0 @@
-<mj-section>
-	<mj-column padding="0" width="100%">
-  		<mj-image src="<%= asset_url('email/oc-connect-email-header.jpg') %>" padding="0"/>
-	</mj-column>
-
-	<mj-divider border-width="1px" border-color="#ccc" />
-</mj-section>
